@@ -20,7 +20,7 @@ const store = createStore(
     rootReducer,
     compose(
         applyMiddleware(thunk),// Defered dispatch
-        typeof window !== 'undefined' && window.navigator.userAgent.includes('Chrome') ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : compose
+        //typeof window !== 'undefined' && window.navigator.userAgent.includes('Chrome') ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() : compose
     )
 )
 export default store
