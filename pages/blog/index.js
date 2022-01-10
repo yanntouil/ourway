@@ -27,11 +27,6 @@ import camalize from 'app/helpers/camalize'
 
 /**
  * Blog category page
- * ToDo : Créer les images pour les catégories
- * ToDo : Voir si les textes déscriptifs sont réelemements nescessaires
- * ToDo : Revoir les entêtes sur les pages de categorie
- * ToDo : Créer quelques articles : Histoire de Vue, Histoire de React, la création de custom hooks sous React, l'intégration d'un sytème de traduction sous React 2 - 3 Annimations Full CSS, le fonctionnement des flex box
- * ToDo : , le fonctionnement des grids, L'instalation de Laravel, l'usage des couleurs, l'accessibilité dans le web, Mon portfolio, l'agilité, le travail en equipe pluriculturel
  */
 export default function Index() {
     /**
