@@ -109,7 +109,7 @@ export function BlogLastArticles({ articles, className }) {
                 {articles.map((article) => (
                     <li className="" key={uuid()}>
                         <Link href={`/blog/${article.category}/${article.slug}`}>
-                            <a className="flex justify-between gap-4 text-lg font-handwriting">
+                            <a className="flex justify-between gap-4 text-lg font-gochi-hand">
                                 <div className="text-ellipsis">{article.title}</div>
                                 <div>{(new Date(article.created)).toLocaleDateString(currentLocale)}</div>
                             </a>
