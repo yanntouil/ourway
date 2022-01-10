@@ -57,6 +57,9 @@ Mes premiers projets était un peu grossier mais à l’arrivé de **jQuery** j�
 
 Je suis très attaché depuis à la création de **Sass** et d’**espace d’administration** interactif et dynamique afin de rendre le travail des utilisateurs toujours plus **intuitif**, **agréable** et **ludique**.
                 `,
+                'content-1': "Passionné par le Javascript depuis toujours, j'ai eu l'occasion de voir grandir ce langage, un peu maladroit à ses débuts, en un langage qualitatif.",
+                'content-2': "Mes premiers projets était un peu grossier mais à l’arrivé de jQuery j’ai commencé à structurer mon code. A la sortie d’Angular JS j’ai eu l’occasion de me faire la main sur un gros projet et depuis je ne conçoit plus le développement d’interface sans un bon Framework sous la main. J’ai fait un bout de chemin avec Vue 2 puis Vue 3 et récemment React a trouvé une place dans mon cœur.",
+                'content-3': "Je suis très attaché depuis à la création de Saas et d’espace d’administration interactif et dynamique afin de rendre le travail des utilisateurs toujours plus intuitif, agréable et ludique.",
             },
             'more': "Webpack, Babel, ..."
         },
