@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import React from 'react'
 import { useSelector } from 'react-redux'
 import Head from 'next/head'
@@ -28,6 +29,10 @@ export default function Layout({ children }) {
         <>  
             <Head>
                 <title>{pageTitle}</title>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+                    rel="stylesheet"
+                />
             </Head>
             <Header />
             {/* {media.min('lg') && <Bubbles />}
