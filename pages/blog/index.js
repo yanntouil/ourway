@@ -61,7 +61,9 @@ export default function Index() {
                 </div>
             </div>
             <Cards className={className({
-                'bg-emerald-600': false
+                'bg-emerald-800 bg-sky-800 bg-green-800 bg-red-800 bg-rose-800 bg-amber-800 bg-indigo-800 bg-lime-800': false,
+                'bg-emerald-600 bg-sky-600 bg-green-600 bg-red-600 bg-rose-600 bg-amber-600 bg-indigo-600 bg-lime-600': false,
+                'bg-emerald-500 bg-sky-500 bg-green-500 bg-red-500 bg-rose-500 bg-amber-500 bg-indigo-500 bg-lime-500': false,
             })}>
                 {categories.map((category) => (
                     <Card3D isTurned={categoryOpened === category.name} key={`blog-${category.name}`}>
