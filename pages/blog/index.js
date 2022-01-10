@@ -103,13 +103,13 @@ export function BlogLastArticles({ articles, className }) {
     const __ = useTranslation('pageBlog')
     const { currentLocale } = useSelector(translationSelector)
     return (
-        <div className={`grow flex flex-col justify-center gap-2 ${className}`}>
-            <h4 className="text-3xl font-medium leading-normal text-center font-handwriting">{__('last-articles')}</h4>
+        <div className={`grow flex flex-col justify-center gap-2 font-gochi-hand ${className}`}>
+            <h4 className="text-3xl font-medium leading-normal text-center">{__('last-articles')}</h4>
             <ul className="flex flex-col py-2 gap-2">
                 {articles.map((article) => (
                     <li className="" key={uuid()}>
                         <Link href={`/blog/${article.category}/${article.slug}`}>
-                            <a className="flex justify-between gap-4 text-lg font-gochi-hand">
+                            <a className="flex justify-between gap-4 text-lg">
                                 <div className="text-ellipsis">{article.title}</div>
                                 <div>{(new Date(article.created)).toLocaleDateString(currentLocale)}</div>
                             </a>
