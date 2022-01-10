@@ -1,0 +1,43 @@
+/**
+ * Hero
+ */
+
+
+
+
+
+
+.hero {
+    display: flex; flex-direction: column;
+    padding: 3rem 0;
+    gap: 0.5rem;
+    &.hero-picture {
+        padding-top: calc(50vw / 3 - 2rem);
+    }
+    &-secondary {
+        color: $secondary-800;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+        .dark & {
+            color: $secondary-100;
+        }
+    }
+    &-highlight {
+        color: $secondary-800;
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.2;
+        .dark & {
+            color: $secondary-100;
+        }
+    }
+    &-content {
+        color: $secondary-800;
+        font-size: 1rem;
+        line-height: 1.2;
+        .dark & {
+            color: $secondary-100;
+        }
+    }
+}

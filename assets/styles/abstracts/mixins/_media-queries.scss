@@ -1,0 +1,26 @@
+/**
+ * Project Ohmyfood
+ * Mixin media-queries
+ */
+
+
+
+
+
+@mixin media-min($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin media-max($breakpoint) {
+    @media screen and (max-width: (map-get($breakpoints, $breakpoint) - 1px)) {
+        @content;
+    }
+}
+
+@mixin media-between($breakpoint-1, $breakpoint-2) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint-1)) and (max-width: (map-get($breakpoints, $breakpoint-2) - 1px)) {
+        @content;
+    }
+}

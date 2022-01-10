@@ -1,0 +1,41 @@
+/**
+ * OurWay Main Sass file
+ */
+
+
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/typography';
+
+
+// Component
+@import 'components/aspect-ratio';
+@import 'components/background-animated';
+@import 'components/bubbles';
+@import 'components/card-3d';
+@import 'components/darkmode';
+@import 'components/hero';
+@import 'components/picture-header';
+@import 'components/text';
+
+// Layout
+@import 'layout/base';
+@import 'layout/header';
+@import 'layout/main';
+
+// Pages
+@import 'pages/skills';
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+.page-skills {
+    position: relative;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 6rem repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "picture picture . . . ."
+    "picture picture . . . ."
+    "picture picture . . . ."
+    "heading heading heading . . ."
+    "heading heading heading . . ."
+    "heading heading heading . . ."; 
+    &-picture {
+        grid-area: picture;
+    }
+    &-heading {
+        grid-area: heading;
+    }
+}

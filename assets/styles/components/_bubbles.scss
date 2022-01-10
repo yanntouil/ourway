@@ -1,0 +1,52 @@
+/**
+ *
+ */
+
+
+
+
+
+
+.bubble-animated {
+    position: absolute; z-index: -10;
+    display: block;
+    width: var(--size); height: var(--size);
+    border-radius: var(--size);
+    transition: transform 10s linear;
+    transform-origin: 20% 40%;
+}
+.bubble-animated-1 {
+    --size: 2vw;
+    top: 4vw; left: 32vw;
+    background: $primary-200;
+}
+.bubble-animated-2 {
+    --size: 1.7vw;
+    top: 1vw; left: 34vw;
+    background: $primary-500;
+}
+.bubble-animated-3 {
+    --size: 1.5vw;
+    top: 4vw; left: 36vw;
+    background: $primary-800;
+}
+.bubble-animated-4 {
+    --size: 1.7vw;
+    top: 16vw; left: 45vw;
+    background: $primary-500;
+}
+.bubble-animated-5 {
+    --size: 1.9vw;
+    top: 23vw; left: 42vw;
+    background: $primary-200;
+}
+.bubble-animated-6 {
+    --size: 1.5vw;
+    top: 30vw; left: 54vw;
+    background: $primary-800;
+}
+.bubble-animated-7 {
+    --size: 3vw;
+    top: 12vw; left: 25vw;
+    background: $primary-200;
+}

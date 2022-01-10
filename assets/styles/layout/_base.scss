@@ -1,0 +1,75 @@
+/**
+ * Base layout
+ */
+
+
+html {
+    font-size: 16px;//1vw
+    scroll-behavior: smooth;
+}
+
+#__next {
+    width: 100%; //max-width: 1920px;
+    height: calc(100vw / 16 * 8);
+    
+}
+
+
+$scrollbar-width: 0.75rem;
+body {
+    min-height: 100vh;
+    scrollbar-width: thin;
+    scrollbar-color: $secondary-800 $secondary-600;
+    &::-webkit-scrollbar {
+        width: $scrollbar-width;
+        height: $scrollbar-width;
+    }
+    &::-webkit-scrollbar-track {
+        background: $secondary-50;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $scrollbar-width;
+        border: 1px solid $secondary-200;
+        background: $secondary-600;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        border-radius: $scrollbar-width;
+        border-width: 1px;
+        background: $secondary-800;
+    }
+}
+
+body.dark {
+    background-color: $secondary-800;
+    color: $white;
+    &::-webkit-scrollbar-track {
+        background: $secondary-900;
+    }
+    &::-webkit-scrollbar-thumb {
+        border: 1px solid $secondary-900;
+        background: $secondary-700;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        border-width: 1px;
+        background: $secondary-500;
+    }
+}
+
+.fullscreen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+
+
+
+.min-h-screen-header {
+    min-height: calc(100vh - 6rem);
+    @include media-max('sm') {
+        min-height: calc(100vh - 4rem);
+    }
+}

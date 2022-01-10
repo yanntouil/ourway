@@ -1,0 +1,47 @@
+/**
+ *
+ */
+
+
+
+
+
+
+.background-animated {
+    --big: 35vw;
+    --small: 20vw;
+    position: fixed; right: 0; bottom: 0; left: 0; z-index: -10;
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: var(--size); height: var(--size);
+        border-radius: calc(var(--size) / 2);
+    }
+    &:before {
+        --size: var(--big);
+        bottom: calc(var(--size) / 4 * 3 * -1); right: calc(var(--size) / 6 * -1);
+        background: $secondary-200;
+        .dark & {
+            background: $secondary-700;
+        }
+        animation: animateBackgroundAnimated 15s infinite alternate;
+    }
+    &:after {
+        --size: var(--small);
+        bottom: calc(var(--size) / 4 * 3 * -1); right: calc(var(--small) / 3 * 2);
+        background: $secondary-400;
+        .dark & {
+            background: $secondary-600;
+        }
+        animation: animateBackgroundAnimated 12s infinite alternate;
+    }
+}
+@keyframes animateBackgroundAnimated {
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+}

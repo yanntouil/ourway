@@ -1,7 +1,26 @@
+import { Provider } from 'react-redux';
+import store from 'app/reducers/store'
+import { AnimatePresence } from 'framer-motion'
+import Layout from 'components/layout/Layout'
 import 'tailwindcss/tailwind.css'
+import 'assets/styles/app.scss'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+
+export default function Application({ Component, pageProps, router }) {
+
+    /**
+     * Render
+     */
+    return (
+        <Provider store={store}>
+            <Layout key="layout">
+                {/* <AnimatePresence exitBeforeEnter initial={false}> */}
+                    <Component {...pageProps}  key={router.route}/>
+                {/* </AnimatePresence> */}
+            </Layout>
+        </Provider>
+    )
 }
 
-export default MyApp
+
