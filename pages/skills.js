@@ -225,7 +225,7 @@ export default function Skills() {
                             <div className="relative flex flex-col justify-center h-full overflow-hidden gap-2 p-8 text-white bg-secondary-900/90">
                                 <h3 className="text-xl sm:text-xl md:text-3xl lg:text-xl xl:text-2xl font-semibold">{__('frontend.js.title')}</h3>
                                 {/* <Markdown className="flex flex-col gap-2 text-xl md:text-2xl lg:text-[1rem] xl:text-xl font-medium leading-8" noProse>{__('frontend.js.content-md')}</Markdown> */}
-                                <p className="text-lg sm:text-lg md:text-2xl lg:text-base xl:text-xl font-medium lg:text-red-500 xl:text-green-500">{__('frontend.js.content-1')}</p>
+                                <p className="text-lg sm:text-lg md:text-2xl lg:text-base xl:text-xl font-medium">{__('frontend.js.content-1')}</p>
                                 <p className="text-lg sm:text-lg md:text-2xl lg:text-base xl:text-xl font-medium">{__('frontend.js.content-2')}</p>
                                 <p className="text-lg sm:text-lg md:text-2xl lg:text-base xl:text-xl font-medium">{__('frontend.js.content-3')}</p>
                             </div>

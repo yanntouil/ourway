@@ -11,22 +11,7 @@ import Card3D, { Card3DBack, Card3DFront } from 'components/ui/Card3D'
 import { CardHeader, CardHeaderIcon, CardHeaderTitle, CardImage, CardContent, CardColoredBottom, CardFloatingButton, Cards } from 'components/ui/Card'
 
 // Images
-import vueImg from 'assets/images/blog/categories/vue-cover.jpg'
 import VueSvg from 'assets/images/icons/brands/vuejs.svg'
-import reactImg from 'assets/images/blog/categories/react-cover.jpg'
-// import RaactSvg from 'assets/images/icons/brands/react.svg'// To long path to be imported as component
-import laravelImg from 'assets/images/blog/categories/laravel-cover.jpg'
-import LaravelSvg from 'assets/images/icons/brands/laravel.svg'
-import designImg from 'assets/images/blog/categories/design-cover.jpg'
-import DesignSvg from 'assets/images/icons/light/swatchbook.svg'
-import cssImg from 'assets/images/blog/categories/css-cover.jpg'
-import CssSvg from 'assets/images/icons/brands/css3.svg'
-import projectManagementImg from 'assets/images/blog/categories/project-management-cover.jpg'
-import ProjectManagementSvg from 'assets/images/icons/light/project-diagram.svg'
-import projectsImg from 'assets/images/blog/categories/projects-cover.jpg'
-import ProjectsSvg from 'assets/images/icons/light/hand-holding-seedling.svg'
-import nodeImg from 'assets/images/blog/categories/node-cover.jpg'
-import NodeSvg from 'assets/images/icons/brands/node-js.svg'
 import AngleDoubleLeftSvg from 'assets/images/icons/light/angle-double-left.svg'
 import AngleDoubleRightSvg from 'assets/images/icons/light/angle-double-right.svg'
 import { SectionSecondary, SectionTitle } from 'components/ui/Section'
@@ -75,7 +60,9 @@ export default function Index() {
                     <SectionSecondary>{__('secondary')}</SectionSecondary>
                 </div>
             </div>
-            <Cards>
+            <Cards className={className({
+                'bg-emerald-600': false
+            })}>
                 {categories.map((category) => (
                     <Card3D isTurned={categoryOpened === category.name} key={`blog-${category.name}`}>
                         <Card3DFront>
