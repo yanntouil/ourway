@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import { disableBodyScroll, enableBodyScroll, clearScrollLocks } from 'app/helpers'
 import {motion, AnimatePresence} from 'framer-motion'
 import config from 'app/config'
+import { disableBodyScroll, enableBodyScroll, clearScrollLocks } from 'app/helpers'
 import { className } from 'app/helpers'
 import { useTranslation } from 'app/hooks'
 import { layoutSelector } from 'app/reducers'
@@ -14,6 +14,8 @@ import { layoutSelector } from 'app/reducers'
 import AngleDownIcon from 'assets/images/icons/light/angle-down.svg'
 import TimesIcon from 'assets/images/icons/light/times.svg'
 import twitterIcon from 'assets/images/logos/twitter-animated.gif'
+import flagEnImg from 'assets/images/flags/flag-en.png'
+import flagFrImg from 'assets/images/flags/flag-fr.png'
 
 /**
  * Global params
@@ -353,7 +355,7 @@ export function MenuLanguages() {
                         onClick={() => changeLanguage(language.local)}
                     >
                         <Image 
-                            src={`/images/flags/${language.flag}`} 
+                            src={language.local === 'en' ? flagEnImg : flagFrImg}
                             alt={__('layout.'+language.name)}
                             width="56" 
                             height="56" 

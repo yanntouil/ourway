@@ -8,7 +8,10 @@ import { useResponsive, useTranslation } from 'app/hooks'
 import config from 'app/config'
 import Logo from 'components/ui/Logo'
 import Menu from 'components/layout/Menu'
-import BurgerIcon from 'assets/images/icons/light/bars.svg'
+// Icons
+import BurgerEnIcon from 'assets/images/flags/burger-flag-en.svg'
+import BurgerFrIcon from 'assets/images/flags/burger-flag-fr.svg'
+import { translationSelector } from 'app/reducers'
 
 /**
  * Display header
@@ -23,6 +26,7 @@ export default function Header() {
     const router = useRouter()
     const __ = useTranslation()
     const { logoSheme, pageTitle } = useSelector(layoutSelector)
+    const { currentLanguage } = useSelector(translationSelector)
     const media = useResponsive()
     const menu = config.menu
     
@@ -105,7 +109,8 @@ export default function Header() {
                                 className="flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16 rounded-full outline-none text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:text-primary-600 dark:focus:text-primary-400     transition-colors duration-300 ease-in-out"
                                 onClick={openMenu}
                             >   
-                                <BurgerIcon className="fill-current w-8 h-8" aria-hidden="true" />
+                                {currentLanguage === 'en' && (<BurgerEnIcon className="fill-current w-8 h-8" aria-hidden="true" />)}
+                                {currentLanguage === 'fr' && (<BurgerFrIcon className="fill-current w-8 h-8" aria-hidden="true" />)}
                                 <span className="sr-only">{__('layout.open-menu')}</span>
                             </button>
                         </li>
