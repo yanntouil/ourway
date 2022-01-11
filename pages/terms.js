@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import Image from 'next/image'
 import { translationSelector } from 'app/reducers'
 import { useTranslation } from 'app/hooks'
 // Components
 import Main from 'components/layout/Main'
 import { SectionSecondary, SectionTitle } from 'components/ui/Section'
-// Images
-import UnderconstructionSvg from 'assets/images/underconstruction.svg'
 import Markdown from 'components/ui/Markdown'
+// Images
+import coverImg from 'assets/images/terms/cover.jpg'
 
 export default function Terms() {
     const dispatch = useDispatch()
@@ -16,11 +17,22 @@ export default function Terms() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => dispatch({type: 'layout/setPageTitle', payload: __('page-title')}), [currentLanguage])
     return (
-        <Main>
-            <section className="max-w-7xl mx-auto mt-8">
-                <SectionTitle>{__('title')}</SectionTitle>
-                <div className="">
-                    <Markdown>{__('terms')}</Markdown>
+        <Main noPaddingX noPaddingTop>
+            <section className="">
+                <div className="relative h-80">
+                    <Image 
+                            src={coverImg} 
+                            layout="fill"
+                            objectFit="cover"
+                            priority={true}
+                            alt={__('title')} 
+                        />
+                </div>
+                <div className="max-w-7xl mx-auto mt-8">
+                    <SectionTitle>{__('title')}</SectionTitle>
+                    <div className="">
+                        <Markdown>{__('terms')}</Markdown>
+                    </div>
                 </div>
             </section>
         </Main>
