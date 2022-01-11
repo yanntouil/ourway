@@ -29,7 +29,7 @@ import learningImg from 'assets/images/portfolio/learning.png'
 /**
  * Portfolio page
  */
-export default function Index() {
+export default function Portfolio() {
     /**
      * Page setup
      */
@@ -139,7 +139,7 @@ export function ProjectsCategories ({ categories, category, toggleCategory }) {
                         <div className="absolute inset-0 bg-primary-500/25 backdrop-grayscale" />
                     )}
                     <HoveredCubeContent 
-                        className="bg-black/50 text-4xl text-white font-bold" 
+                        className="bg-black/50 text-2xl sm:text-2xl md:text-4xl lg:text-4xl text-white font-bold" 
                         from={['left', 'top', 'right', 'bottom'][index]}
                     >{item.title}</HoveredCubeContent>
                 </HoveredCube>
