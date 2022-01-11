@@ -8,7 +8,7 @@ const translation = {
             'content-2': "Ce projet a été développé en React sous Next avec très peu de librairie externe le but étant de me familiariser avec React. J’utilise Framer Motion pour la gestion mes animations et Tailwind pour mon design.",
             'content-3': "SPOILER ALERT : J’ai pour projet de sortir une version par année, la prochaine inclura une API Node me permettant d’ajouter un espace personnel à pour mes utilisateurs de personnaliser son profil et de commenter les articles. Cette API me permettra aussi de créer un espace de rédaction pour mettre en page mes projets et mon blog car actuellement le contenu est statique et de géré les messages dans l’espace contact. Mais pour cela rendez-vous fin 2022.",
             'content-md': `
-Bonjour et bienvenu à tous. Le projet Ourway est né pour donner suite à ma reconversion professionnelle dans le développement frontend. Il a été développer et mis en ligne dans un délais très courts (1 mois) alors excusez-moi des quelques imperfections, je les corrigerais au fil du temps.
+Bonjour et bienvenu à tous. Le projet Ourway est né pour donner suite à ma reconversion professionnelle dans le développement frontend. Il a été développé et mis en ligne dans un délais très courts (1 mois) alors excusez-moi des quelques imperfections, je les corrigerai au fil du temps.
 
 Ce projet a été développé en React sous Next avec très peu de librairie externe, le but étant de me familiariser avec React. J’utilise Framer Motion pour la gestion de mes animations et Tailwind pour mon design. N’hésitez pas à aller jeter un œil sur mon GitHub pour en savoir plus.
 
