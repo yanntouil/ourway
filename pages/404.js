@@ -5,9 +5,7 @@ import { useTranslation } from 'app/hooks'
 // Components
 import Main from 'components/layout/Main'
 // Images
-import Error404Svg from 'assets/images/error-404.svg'
-import Error404SkySvg from 'assets/images/error-404-sky.svg'
-import Error404BlueSvg from 'assets/images/error-404-blue.svg'
+import Error404Svg from 'assets/images/404/error-404.svg'
 import { SectionSecondary, SectionTitle } from 'components/ui/Section'
 
 export default function Error404() {
