@@ -25,12 +25,20 @@ import Markdown from 'components/ui/Markdown'
  export function BoxCardTitle ( props ) {
     const cleanProps = {...props}
     if (props.className) delete(cleanProps.className)
-    return (
+    if (props.heading) delete(cleanProps.heading)
+    const heading = props.heading ?? 3
+    return heading === 3 ? (
+        <h3 {...cleanProps} className={className([
+            'mb-2 px-8 text-2xl font-semibold text-secondary-600 dark:text-white',
+            props.className ?? '',
+        ])} />
+    ) : heading === 4 ? (
         <h4 {...cleanProps} className={className([
             'mb-2 px-8 text-2xl font-semibold text-secondary-600 dark:text-white',
             props.className ?? '',
         ])} />
-    )
+    ) : (<></>)
+
 }
 
 /**

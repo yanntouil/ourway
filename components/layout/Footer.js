@@ -1,19 +1,18 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslation } from 'app/hooks'
 import { className } from 'app/helpers'
 import config from 'app/config'
-
 // Images
-import Link from 'next/link'
 import Logo from 'components/ui/Logo'
+import AuthorImage from 'assets/images/author.jpg'
+import twitterIcon from 'assets/images/logos/twitter-animated.gif'
+// Icons
 import PhoneIcon from 'assets/images/icons/light/phone.svg'
 import AdresseIcon from 'assets/images/icons/light/map-signs.svg'
 import EmailIcon from 'assets/images/icons/light/envelope.svg'
 import CircleIcon from 'assets/images/icons/solid/circle.svg'
-import AuthorImage from 'assets/images/author.jpg'
-import twitterIcon from 'assets/images/logos/twitter-animated.gif'
-
 
 /**
  * Footer
@@ -38,7 +37,7 @@ export default function Footer() {
     return (
         <section className="flex justify-end items-center">
             <div className="relative sm:w-96 lg:w-[18rem] xl:w-96  sm:h-48 p-4 gap-4" /*style={{clipPath: 'circle(16rem at 2rem -6rem)'}}*/>
-                <h3 className="sm:absolute sm:top-4 sm:right-24 text-2xl pb-4 text-center font-gochi-hand">{__('footer.find-me')}</h3>
+                <h2 className="sm:absolute sm:top-4 sm:right-24 text-2xl pb-4 text-center font-gochi-hand">{__('footer.find-me')}</h2>
                 <ul className="flex justify-center gap-4">
                     <li /* LinkedIn */ className="sm:absolute sm:top-0 sm:right-0">
                         <a href={config.author.linkedin} target="_blank" rel="noopener noreferrer" className={className([
@@ -122,13 +121,14 @@ export default function Footer() {
     const [displayEmail, setDisplayEmail] = useState(false)
     return (
         <section className="flex flex-col items-center sm:items-start sm:flex-row gap-8">
+            <h1 className="sr-only">{__('footer.title')}</h1>
             <div className="relative w-64 h-64 shrink-0 rounded-full bg-secondary-200">
                 <Image src={AuthorImage} layout="fill" objectFit="cover" priority={true} className="rounded-full" alt={config.author.fullname} />
             </div>
             <div className="flex">
                 <div className="flex flex-col gap-2">
-                    <h2 className="sm:relative sm:-left-4"><Logo className="h-16 fill-current" ariaLabel="Ourway" /></h2>
-                    <h3 className="flex items-center gap-4 text-2xl sm:-mr-2 md:mr-0 font-semibold">{config.author.firstname} {config.author.lastname}<span className="text-base font-normal italic">{__('footer.job')}</span></h3>
+                    <h2 className="sm:relative sm:-left-4"><Logo className="h-16 fill-current" ariaLabel="Ourway" /><span className="sr-only">{config.sitename}</span></h2>
+                    <h3 className="flex items-center gap-4 text-2xl sm:-mr-2 md:mr-0 font-semibold">{config.author.firstname} {config.author.lastname} <span className="sr-only">-</span> <span className="text-base font-normal italic">{__('footer.job')}</span></h3>
                     <ul>
                         <li className="flex items-center">
                             <AdresseIcon className="w-6 h-6 my-2 mx-4 shrink-0 fill-current" aria-hidden="true" />
@@ -175,7 +175,7 @@ export function FooterBottomLink() {
     const __ = useTranslation('layout')
     return (
         <div className="flex flex-col lg:flex-row items-center lg:justify-center lg:items-center pt-2  lg:gap-4 text-lg xl:text-xl font-gochi-hand">
-            <h3>{__('footer.made')}</h3>
+            <h2>{__('footer.made')}</h2>
             <ul className="flex flex-wrap justify-center gap-x-4">
                 <li className="flex items-center gap-4">
                     <CircleIcon className="hidden lg:inline-block w-2 h-2 -mt-0.5 mb-0.5 fill-current" />

@@ -77,9 +77,9 @@ export default function HomeSlider( props) {
                             >
                                 <div className="flex items-center py-2 xl:py-4">
                                     <PlusSvg className="w-0 h-6 xl:h-8 group-hover:w-6 xl:group-hover:w-8 group-hover:mr-2 fill-current transition-all duration-500" />
-                                    <h2 className="flex text-xl md:text-2xl lg:text-3xl font-semibold">
+                                    <h3 className="flex text-xl md:text-2xl lg:text-3xl font-semibold">
                                         {slide.title}
-                                    </h2>
+                                    </h3>
                                 </div>
                                 <div 
                                     className="overflow-hidden transition-all duration-500"

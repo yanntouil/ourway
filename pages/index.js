@@ -59,16 +59,10 @@ export default function Home() {
      */
     return (
         <Main className="max-w-full overflow-hidden flex flex-col" noPaddingX noPaddingTop>
-            
+            <h1 className="sr-only">{__('title')}</h1>
             {/* Main Slider */}
             <Section className="relative h-screen" id="news">
-                {/* <div className="absolute inset-0 w-full h-full hidden lg:block" aria-hidden="true">
-                    <AnimatedBubble size="10" x="8" y="12" className="bg-secondary-200"/>
-                    <AnimatedBubble size="15" x="7" y="3" className="bg-secondary-500"/>
-                    <AnimatedBubble size="25" x="6" y="3" className="border-2 border-secondary-600"/>
-                    <AnimatedBubble size="8" x="5" y="5" className="bg-secondary-800"/>
-                </div> */}
-                <div className="absolute z-1 pl-8 lg:pl-16 pt-4 text-4xl md:text-6xl lg:text-8xl font-black tracking-wide uppercase text-center text-stroke text-stroke-secondary-800 text-secondary-800/50 dark:text-stroke-white dark:text-white/50">News</div>
+                <h2 className="absolute z-1 pl-8 lg:pl-16 pt-4 text-4xl md:text-6xl lg:text-8xl font-black tracking-wide uppercase text-center text-stroke text-stroke-secondary-800 text-secondary-800/50 dark:text-stroke-white dark:text-white/50">{__('news')}</h2>
                 <SliderWild slides={articlesHero} />
             </Section>
 

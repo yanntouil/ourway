@@ -8,17 +8,14 @@ import { useResponsive, useTranslation, useWindowSize } from 'app/hooks'
 import { translationSelector } from 'app/reducers'
 import { getDragConstraintsLeft, getSlideWidth, getTrackWidth, handleDragEnd, pagination } from 'app/helpers'
 import projectsList from 'data/projects'
-
 // Components
 import Main from 'components/layout/Main'
 import Section, { SectionSecondary, SectionTitle } from 'components/ui/Section'
 import SliderFullscreen from 'components/ui/SliderFullscreen'
 import HoveredCube, { HoveredCubeContent } from 'components/ui/HoveredCube'
-
 // Icons
 import ChevronRightIcon from 'assets/images/icons/light/chevron-right.svg'
 import ChevronLeftIcon from 'assets/images/icons/light/chevron-left.svg'
-
 // Categories
 import designImg from 'assets/images/portfolio/design.png'
 import printImg from 'assets/images/portfolio/print.png'
@@ -75,9 +72,10 @@ export default function Portfolio() {
      */
     return (
         <Main noPaddingX noPaddingTop>
-
+            <h1 className="sr-only">{__('page-title')}</h1>
             {/* Hero Slider */}
             <Section className="h-screen" noPadding>
+                <h2 className="sr-only">{__('news')}</h2>
                 <SliderFullscreen 
                     slides={projects.filter(// Hero projects
                         project => project.hero

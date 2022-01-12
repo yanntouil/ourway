@@ -119,7 +119,7 @@ export default function SliderWild({ slides, sliderTiming = 10 }) {
                         <div className="absolute inset-0 grid grid-cols-6">
                             <div className="col-span-5 sm:col-span-4 lg:col-span-3 flex items-end px-4 sm:px-8 lg:px-16 py-16">
                                 <div className="relative z-2 p-8 bg-secondary-200/75 dark:bg-secondary-900/75">
-                                    <h2 className="mb-4 text-3xl font-semibold">{slide.title}</h2>
+                                    <h3 className="mb-4 text-3xl font-semibold">{slide.title}</h3>
                                     <p className="text-lg">{slide.description}</p>
                                 </div>
                             </div>

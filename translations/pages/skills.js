@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Compétences",
+        'title': "Compétences",
         'integration': {
             'title': "Intégration",
             'secondary': "Mise en place de CMS ou création de sites from scratch, griffonnés sur un bout de papier ou maquettes terminées, je me ferai plaisir à donner vie à votre projet, toujours dans le respect de vos valeurs et de votre identité graphique. N'hésitez pas à faire appel à moi pour mieux comprendre vos besoins, budgéter vos idées ou réaliser votre futur site web.",
@@ -108,6 +109,7 @@ const translation = {
     },
     en: {
         'page-title': "Skills",
+        'title': "Skills",
         'integration': {
             'title': "Intégration",
             'secondary': "Mise en place de CMS ou création de sites from scratch, griffonnés sur un bout de papier ou maquettes terminées, je me ferai plaisir à donner vie à votre projet, toujours dans le respect de vos valeurs et de votre identité graphique. N'hésitez pas à faire appel à moi pour mieux comprendre vos besoins, budgéter vos idées ou réaliser votre futur site web.",

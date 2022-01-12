@@ -51,7 +51,7 @@ export default function Index() {
             <div className="relative mb-16">
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col justify-center">
                     <HeadingSvg className="mb-4 fill-current text-secondary-800 dark:text-white" />
-                    <SectionTitle>{__('title')}</SectionTitle>
+                    <SectionTitle heading={1}>{__('title')}</SectionTitle>
                     <SectionSecondary>{__('secondary')}</SectionSecondary>
                 </div>
             </div>
@@ -61,6 +61,7 @@ export default function Index() {
                 'bg-emerald-600': false, 'bg-sky-600': false, 'bg-green-600': false, 'bg-red-600': false, 'bg-rose-600': false, 'bg-amber-600': false, 'bg-indigo-600': false, 'bg-lime-600': false,
                 'bg-emerald-500': false, 'bg-sky-500': false, 'bg-green-500': false, 'bg-red-500': false, 'bg-rose-500': false, 'bg-amber-500': false, 'bg-indigo-500': false, 'bg-lime-500': false,
             })}>
+                <h2 className="sr-only">{__('categories')}</h2>
                 {categories.map((category) => (
                     <Card3D isTurned={categoryOpened === category.name} key={`blog-${category.name}`}>
                         <Card3DFront>

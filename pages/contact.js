@@ -116,12 +116,12 @@ export default function Contact() {
             <Main className="overflow-hidden">
                 <div className="max-w-7xl mx-auto">
                     {/* Header */}
-                    <SectionTitle>{__('title')} <TextAnimated1 sentences={[__('highlight-1'), __('highlight-2'), __('highlight-3')]} /></SectionTitle>
+                    <SectionTitle heading={1}>{__('title')} <TextAnimated1 sentences={[__('highlight-1'), __('highlight-2'), __('highlight-3')]} /></SectionTitle>
                     {/* Content */}
                     <div className="relative grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto gap-16">
                         {/* Contact form */}
                         <form className="order-2 lg:order-1 flex flex-col gap-4" onSubmit={sendEmail}>
-                            <h3 className="text-2xl ">{__('contact-form.title')}</h3>
+                            <h2 className="text-2xl ">{__('contact-form.title')}</h2>
                             <div className="flex flex-col gap-1">
                                 <label htmlFor="contactName" className="font-medium">{__('contact-form.name')}</label>
                                 <input type="text" name="fullname" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.name} onChange={(e) => setContactForm({...contactForm, name: e.target.value})} />

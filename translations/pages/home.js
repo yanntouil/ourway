@@ -2,6 +2,7 @@ const translation = {
     fr: {
         'page-title': "Accueil",
         'title': "Accueil",
+        'news': "Actu",
         'welcome': {
             'title': "Bienvenue sur Ourway",
             'content-1': "Bonjour et bienvenu à tous. Le projet Ourway est né pour donner suite à ma reconversion professionnelle dans le développement frontend. Il a été développer et mis en ligne dans un délais très courts (1 mois) alors excusez-moi des quelques imperfections je les corrigerais au fil du temps.",
@@ -61,6 +62,7 @@ En 2021, à la suite de la récession causée par la pandémie, un grand besoin 
     en: {
         'page-title': "Home",
         'title': "Home",
+        'news': "News",
         'welcome': {
             'title': "Bienvenue sur Ourway",
             'content-1': "Bonjour et bienvenu à tous. Le projet Ourway est né pour donner suite à ma reconversion professionnelle dans le développement frontend. Il a été développer et mis en ligne dans un délais très courts (1 mois) alors excusez-moi des quelques imperfections je les corrigerais au fil du temps.",

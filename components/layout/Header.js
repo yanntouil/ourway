@@ -82,16 +82,8 @@ export default function Header() {
                 <div className="flex justify-between w-full">
                 <Link href="/">
                     <a className="flex mt-2 -mb-2 py-2 sm:py-4">
-                        <Logo 
-                            className={className([
-                                'h-12 sm:h-16 outline-none fill-current',
-                                {'text-secondary-800 dark:text-white': logoSheme === 'dark'},
-                                {'text-white dark:text-secondary-800': logoSheme === 'light'},
-                                {'text-primary-500 dark:primary-500': logoSheme === 'primary'}
-                            ])} 
-                            ariaLabel={__('layout.logo-label')} 
-                        />
-                        <h1 className="sr-only">{pageTitle}</h1>
+                        <Logo className="h-12 sm:h-16 outline-none fill-current text-secondary-800 dark:text-white" aria-hidden="true" />
+                        <span className="sr-only">{pageTitle}</span>
                     </a>
                 </Link>
                 <nav className="" aria-label="Menu">

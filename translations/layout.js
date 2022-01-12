@@ -21,6 +21,7 @@ const translation = {
             'twitter': "Suivez-moi sur twitter",
         },
         'footer': {
+            'title': "Pied de page",
             'job': "Développeur Frontend",
             'display-phone': "Cliquez pour voir le numéro",
             'display-email': "Cliquez pour voir l'e-mail",
@@ -49,6 +50,7 @@ const translation = {
             'twitter': "Follow me on twitter",
         },
         'footer': {
+            'title': "Footer",
             'job': "Frontend Developer",
             'display-phone': "Click to display number",
             'display-email': "Click to display email",

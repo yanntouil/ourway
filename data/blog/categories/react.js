@@ -7,7 +7,7 @@ import background from 'assets/images/blog/categories/react-background.jpg'
   
 const category = [{
     id: 2,
-    name: 'react',
+    name: 'React',
     color: 'sky',
     cover: cover,
     background: background,

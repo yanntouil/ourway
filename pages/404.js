@@ -24,7 +24,7 @@ export default function Error404() {
                 </div>
             </div>
             <div className="max-w-7xl mx-auto mt-8">
-                <SectionTitle>{__('title')}</SectionTitle>
+                <SectionTitle heading={1}>{__('title')}</SectionTitle>
                 <SectionSecondary>{__('secondary')}</SectionSecondary>
             </div>
         </Main>

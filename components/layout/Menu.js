@@ -5,17 +5,16 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import {motion, AnimatePresence} from 'framer-motion'
 import config from 'app/config'
-import { disableBodyScroll, enableBodyScroll, clearScrollLocks } from 'app/helpers'
-import { className } from 'app/helpers'
+import { disableBodyScroll, enableBodyScroll, clearScrollLocks, className } from 'app/helpers'
 import { useTranslation } from 'app/hooks'
 import { layoutSelector } from 'app/reducers'
-
 // Images
+import flagEnImg from 'assets/images/flags/flag-en.png'
+import flagFrImg from 'assets/images/flags/flag-fr.png'
+// Icons
 import AngleDownIcon from 'assets/images/icons/light/angle-down.svg'
 import TimesIcon from 'assets/images/icons/light/times.svg'
 import twitterIcon from 'assets/images/logos/twitter-animated.gif'
-import flagEnImg from 'assets/images/flags/flag-en.png'
-import flagFrImg from 'assets/images/flags/flag-fr.png'
 
 /**
  * Global params
@@ -67,10 +66,10 @@ export default function Menu() {
                         className="flex justify-center items-center w-full h-full"
                         {...motionModal}
                     >
+                        <MenuClose />
                         <MenuDarkMode />
                         <MenuSocialNetwork />
                         <MenuLanguages />
-                        <MenuClose />
                         <MenuLinks />
                     </motion.div>
                 </nav>
@@ -232,12 +231,13 @@ export function MenuClose() {
                 transition-color duration-300 ease-in-out
             "
             variants={{
-                initial: { opacity: 0, x: 100 },
-                animate: { opacity: 1, x: 0 },
+                initial: { opacity: 0 },
+                animate: { opacity: 1 },
                 exit: { opacity: 0, transition: { duration: 0.2 }},
             }}
-            transition={{ 
-                type: "spring", 
+            transition={{
+                delay: 0,
+                type: "spring",
                 stiffness: 200 
             }}
             onClick={() => dispatch({type: 'layout/setShowMenu', payload: false})}

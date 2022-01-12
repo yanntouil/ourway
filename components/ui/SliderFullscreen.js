@@ -97,7 +97,7 @@ export default function SliderFullscreen({ slides, sliderTiming = 10 }) {
                             alt={slide.title} 
                         />
                         <div className="absolute bottom-8 right-8 flex flex-col max-w-xl gap-4 p-8 bg-secondary-800/75 text-white">
-                            <h2 className="text-3xl font-semibold">{slide.title}</h2>
+                            <h3 className="text-3xl font-semibold">{slide.title}</h3>
                             <p>{slide.description}</p>
                         </div>
                     </div>

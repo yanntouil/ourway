@@ -30,12 +30,19 @@ export default React.forwardRef(Section)
 export function SectionTitle( props ) {
     const cleanProps = {...props}
     if (props.className) delete(cleanProps.className)
-    return (
+    if (props.heading) delete(cleanProps.heading)
+    const heading = props.heading ?? 2
+    return heading === 1 ? (
+        <h1 {...cleanProps} className={className([
+            'text-3xl font-semibold pb-4 mb-4 border-b border-secondary-500',
+            props.className ?? '',
+        ])} />
+    ) : heading === 2 ? (
         <h2 {...cleanProps} className={className([
             'text-3xl font-semibold pb-4 mb-4 border-b border-secondary-500',
             props.className ?? '',
         ])} />
-    )
+    ) : (<></>)
 }
 
 /**

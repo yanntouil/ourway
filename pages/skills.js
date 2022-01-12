@@ -55,6 +55,7 @@ export default function Skills() {
      */
     return (
         <Main noPaddingX noPaddingTop>
+            <h1 className="sr-only">{__('title')}</h1>
 
             {/* Integration */}
             <Section id="integration">
@@ -284,8 +285,8 @@ export default function Skills() {
                             <Image src={laravelImg} layout="fill" objectFit="cover" priority={true} alt="Laravel" />
                         </BoxWildImage>
                         <BoxWildBody>
-                            <h2 className="text-3xl">{__('backend.laravel.title')}</h2>
-                            <h3 className="my-2 text-xl uppercase text-red-500">{__('backend.laravel.secondary')}</h3>
+                            <h3 className="text-3xl">{__('backend.laravel.title')}</h3>
+                            <h4 className="my-2 text-xl uppercase text-red-500">{__('backend.laravel.secondary')}</h4>
                             <Markdown className="flex flex-col gap-2 text-lg leading-relaxed" noProse>{__('backend.laravel.content-md')}</Markdown>
                         </BoxWildBody>
                     </BoxWild>
@@ -294,8 +295,8 @@ export default function Skills() {
                             <Image src={nodeImg} layout="fill" objectFit="cover" priority={true} alt="Node" />
                         </BoxWildImage>
                         <BoxWildBody>
-                            <h2 className="text-3xl">{__('backend.node.title')}</h2>
-                            <h3 className="my-2 text-xl uppercase text-green-500">{__('backend.node.secondary')}</h3>
+                            <h3 className="text-3xl">{__('backend.node.title')}</h3>
+                            <h4 className="my-2 text-xl uppercase text-green-500">{__('backend.node.secondary')}</h4>
                             <Markdown className="flex flex-col gap-2 text-lg leading-relaxed" noProse>{__('backend.node.content-md')}</Markdown>
                         </BoxWildBody>
                     </BoxWild>

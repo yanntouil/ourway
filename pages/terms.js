@@ -11,12 +11,19 @@ import Markdown from 'components/ui/Markdown'
 import coverImg from 'assets/images/terms/cover.jpg'
 
 export default function Terms() {
+    /**
+     * Page settings
+     */
     const dispatch = useDispatch()
     const { currentLanguage } = useSelector(translationSelector)
     const __ = useTranslation('pageTerms')
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => dispatch({type: 'layout/setPageTitle', payload: __('page-title')}), [currentLanguage])
-    return (
+    
+    /**
+     * Render
+     */
+     return (
         <Main noPaddingX noPaddingTop>
             <section>
                 <div className="relative h-80">
@@ -29,7 +36,7 @@ export default function Terms() {
                         />
                 </div>
                 <div className="max-w-7xl mx-auto mt-8 px-4 sm:px-8 lg:px-16">
-                    <SectionTitle>{__('title')}</SectionTitle>
+                    <SectionTitle heading={1}>{__('title')}</SectionTitle>
                     <div className="">
                         <Markdown>{__('terms')}</Markdown>
                     </div>

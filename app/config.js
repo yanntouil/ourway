@@ -1,6 +1,7 @@
 import{ init as emailJSInit } from '@emailjs/browser'
 
 const config = {
+    sitename: 'Ourway',
     page: {
         title: 'Ourway',
     },
