@@ -28,7 +28,7 @@ export default function Terms() {
                             alt={__('title')} 
                         />
                 </div>
-                <div className="max-w-7xl mx-auto mt-8">
+                <div className="max-w-7xl mx-auto mt-8 px-4 sm:px-8 lg:px-16">
                     <SectionTitle>{__('title')}</SectionTitle>
                     <div className="">
                         <Markdown>{__('terms')}</Markdown>
