@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "Billed",
-        description: "Reprise d’un Sass RH permettant la gestion de justificatifs de déplacements. Ce projet avait pour but dans un premier temps de debugger l’app, d’établir une couverture complète de tests unitaire et d’intégration avec Jest et de créer un plan de test manuel end to end.",
+        description: "Reprise d’un Saas RH permettant la gestion de justificatifs de déplacements. Ce projet avait pour but dans un premier temps de debugger l’app, d’établir une couverture complète de tests unitaires et d’intégration avec Jest et de créer un plan de tests manuels end to end.",
         stacks: ['Javascript', 'Jest'],
         links: [
             {
@@ -22,14 +22,14 @@ const project = [{
                 href: "https://github.com/yanntouil/YannTouil_9_18112021",
             },
             {
-                name: "Plen E2E",
+                name: "Plan E2E",
                 href: "https://github.com/yanntouil/YannTouil_9_18112021/blob/master/end-to-end-plan.pdf",
             },
         ],
     },
     en: {
         title: "Billed",
-        description: "Reprise d’un Sass RH permettant la gestion de justificatifs de déplacements. Ce projet avait pour but dans un premier temps de debugger l’app, d’établir une couverture complète de tests unitaire et d’intégration avec Jest et de créer un plan de test manuel end to end.",
+        description: "Reprise d’un Saas RH permettant la gestion de justificatifs de déplacements. Ce projet avait pour but dans un premier temps de debugger l’app, d’établir une couverture complète de tests unitaires et d’intégration avec Jest et de créer un plan de tests manuels end to end.",
         stacks: ['Javascript', 'Jest'],
         links: [
             {
@@ -37,7 +37,7 @@ const project = [{
                 href: "https://github.com/yanntouil/YannTouil_9_18112021",
             },
             {
-                name: "Plen E2E",
+                name: "Plan E2E",
                 href: "https://github.com/yanntouil/YannTouil_9_18112021/blob/master/end-to-end-plan.pdf",
             },
         ],

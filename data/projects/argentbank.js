@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "Argent Bank",
-        description: "Création d’un espace personnel pour un banque. Ce projet avait pour but de nous faire créer un système d’authentification, de sécurisé nos routes avec des redirections et de créer un Swagger décrivant le future API de gestion des transactions bancaires.",
+        description: "Création d’un espace personnel pour une banque. Ce projet avait pour but de nous faire créer un système d’authentification, de sécuriser nos routes avec des redirections et de créer un Swagger décrivant le future API de gestion des transactions bancaires.",
         stacks: ['React', 'React Router', 'Redux', 'Redux Thunk', 'Sass'],
         links: [
             {
@@ -25,7 +25,7 @@ const project = [{
     },
     en: {
         title: "Argent Bank",
-        description: "Création d’un espace personnel pour un banque. Ce projet avait pour but de nous faire créer un système d’authentification, de sécurisé nos routes avec des redirections et de créer un Swagger décrivant le future API de gestion des transactions bancaires.",
+        description: "Création d’un espace personnel pour une banque. Ce projet avait pour but de nous faire créer un système d’authentification, de sécuriser nos routes avec des redirections et de créer un Swagger décrivant le future API de gestion des transactions bancaires.",
         stacks: ['React', 'React Router', 'Redux', 'Redux Thunk', 'Sass'],
         links: [
             {

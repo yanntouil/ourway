@@ -14,7 +14,7 @@ const category = [{
     fr: {
         title: "Vue",
         secondary: "Actualité, Tuto et Tips",
-        description: "Vue est l'un de les frameworks js préférés. Dans cette section je partagerais des tutoriels pour apprendre à utiliser Vue dans sa version 2 et 3 mais également sur l'utilisation de Nuxt. On parlera aussi d'actualité, de bon plan et de librairies.",
+        description: "Vue est l'un de mes frameworks js préféré. Dans cette section je partagerai des tutoriels pour apprendre à utiliser Vue dans sa version 2 et 3 mais également sur l'utilisation de Nuxt. On parlera aussi d'actualité, de bons plans et de librairies.",
     },
     en: {
         title: "Vue",

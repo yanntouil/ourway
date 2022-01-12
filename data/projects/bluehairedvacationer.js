@@ -14,7 +14,7 @@
     homepage: true,
     fr: {
         title: "Blue-haired vacationer",
-        description: "Montage créer en 2021, pour un article sur l'accessibilité. L'idée était de montré l'ouverture sur le monde au travers de la différence.",
+        description: "Montage crée en 2021, pour un article sur l'accessibilité. L'idée était de montrer l'ouverture sur le monde au travers de la différence.",
         applications: ['Photoshop'],
         links: [
             {
@@ -25,7 +25,7 @@
     },
     en: {
         title: "Blue-haired vacationer",
-        description: "Montage créer en 2021, pour un article sur l'accessibilité. L'idée était de montré l'ouverture sur le monde au travers de la différence.",
+        description: "Montage crée en 2021, pour un article sur l'accessibilité. L'idée était de montrer l'ouverture sur le monde au travers de la différence.",
         applications: ['Photoshop'],
         links: [
             {

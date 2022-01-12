@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "FishEye",
-        description: "Projet from scratch d’une platform de photographie. Le but de ce projet était de tester nos connaissances avancées en JS au programme création d’un site end to end, plugin select box, modal, lightbox accessible selon les recommandations WCAG.",
+        description: "Projet from scratch d’une plateforme de photographie. Le but de ce projet était de tester nos connaissances avancées en JS.  Au programme création d’un site end to end, plugin select box, modal, lightbox accessible selon les recommandations WCAG.",
         stacks: ['HTML', 'Sass', 'Javascript'],
         links: [
             {
@@ -29,7 +29,7 @@ const project = [{
     },
     en: {
         title: "FishEye",
-        description: "Projet from scratch d’une platform de photographie. Le but de ce projet était de tester nos connaissances avancées en JS au programme création d’un site end to end, plugin select box, modal, lightbox accessible selon les recommandations WCAG.",
+        description: "Projet from scratch d’une plateforme de photographie. Le but de ce projet était de tester nos connaissances avancées en JS.  Au programme création d’un site end to end, plugin select box, modal, lightbox accessible selon les recommandations WCAG.",
         stacks: ['HTML', 'Sass', 'Javascript'],
         links: [
             {

@@ -14,7 +14,7 @@ const category = [{
     fr: {
         title: "Laravel",
         secondary: "Cours, Tuto et Tips",
-        description: "Passionné de Laravel depuis toujours, je me ferais un plaisir de vous faire un tour d'horizon de ce framwork PHP. On parlera de création d'api, d'Eloquent et des joies du seeding, mais aussi de toutes les librairies que j'ai eu l'occasion d'utilisé sur mes projets.",
+        description: "Passionné de Laravel depuis toujours, je me ferai un plaisir de vous faire un tour d'horizon de ce framwork PHP. On parlera de création d'api, d'Eloquent et des joies du seeding, mais aussi de toutes les librairies que j'ai eu l'occasion d'utiliser sur mes projets.",
 },
     en: {
         title: "Laravel",

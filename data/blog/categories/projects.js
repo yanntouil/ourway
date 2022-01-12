@@ -13,13 +13,13 @@ const category = [{
     background: background,
     fr: {
         title: "Mes projets",
-        secondary: "Actualité, Retour d'experience et Avenir",
-        description: "Je vais essayer de partager un maximum mes retours d'expérience sur mes projets et les denières réalisations de mes projets personnels et par la même de ce blog.",
+        secondary: "Actualité, Retour d'experience et Projection",
+        description: "Je vais essayer de partager un maximum mes retours d'expérience sur mes projets et les denières réalisations de mes projets personnels et par la même de Ourway.",
     },
     en: {
         title: "My projects",
         secondary: "News, feedback and future",
-        description: "I'll try to share as much as possible the feedback on my project and last achievements of my personal projects and of course about this blog.",
+        description: "I'll try to share as much as possible the feedback on my project and last achievements of my personal projects and of course about Ourway.",
     }
 }]
 export default category

@@ -14,7 +14,7 @@ const category = [{
     fr: {
         title: "Gestion de projet",
         secondary: "Cours et Retour d'expérience",
-        description: "Dans cette section du blog nous parlerons de gestion de projets au sens large, je vais partager avec vous mes cours ou tout du moins ce que j'en ai retenu et si j'en ai l'occasion, mes retours sur mes propres projets.",
+        description: "Dans cette section du blog nous parlerons de gestion de projets au sens large. Je vais partager avec vous mes cours ou tout du moins ce que j'en ai retenu et si j'en ai l'occasion, mes retours sur mes propres projets.",
 },
     en: {
         title: "Project management",

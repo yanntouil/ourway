@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "Learn@Home",
-        description: "Création d’une maquette et planification du développement d’une app de soutien scolaire. Ce projet no code tournait autour de la mise en place d’un projet web, au programme création de maquette, Personas, User Stories, diagramme de cas d’usage et mise en place d’un Kanban.",
+        description: "Création d’une maquette et planification du développement d’une app de soutien scolaire. Ce projet no code tournait autour de la mise en place d’un projet we. Au programme création de maquette, Personas, User Stories, diagramme de cas d’usage et mise en place d’un Kanban.",
         applications: ['InDesign', 'Figma', 'Miro', 'Trello'],
         links: [
             {
@@ -26,14 +26,14 @@ const project = [{
                 href: "https://trello.com/b/iI2nrvQw/learnhome",
             },
             {
-                name: "Diagrammes de cas d'usage",
+                name: "Diagramme de cas d'usage",
                 href: "https://miro.com/app/board/o9J_lnCBfrM=/?invite_link_id=376586027903",
             },
         ],
     },
     en: {
         title: "Learn@Home",
-        description: "Création d’une maquette et planification du développement d’une app de soutien scolaire. Ce projet no code tournait autour de la mise en place d’un projet web, au programme création de maquette, Personas, User Stories, diagramme de cas d’usage et mise en place d’un Kanban.",
+        description: "Création d’une maquette et planification du développement d’une app de soutien scolaire. Ce projet no code tournait autour de la mise en place d’un projet we. Au programme création de maquette, Personas, User Stories, diagramme de cas d’usage et mise en place d’un Kanban.",
         applications: ['InDesign', 'Figma', 'Miro', 'Trello'],
         links: [
             {
@@ -45,7 +45,7 @@ const project = [{
                 href: "https://trello.com/b/iI2nrvQw/learnhome",
             },
             {
-                name: "Diagrammes de cas d'usage",
+                name: "Diagramme de cas d'usage",
                 href: "https://miro.com/app/board/o9J_lnCBfrM=/?invite_link_id=376586027903",
             },
         ],

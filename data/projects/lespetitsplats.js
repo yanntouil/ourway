@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "Les petits plats",
-        description: "Création d’un algorithme pour un moteur de recherche de recette de cuisine. Le but de ce projet était de tester notre capacité à créer différents algorithmes de recherche, de tester leurs performances et de les décrire sur des diagrammes UML.",
+        description: "Création d’un algorithme pour un moteur de recherche de recettes de cuisine. Le but de ce projet était de tester notre capacité à créer différents algorithmes de recherche, de tester leurs performances et de les décrire sur des diagrammes UML.",
         stacks: ['HTML', 'Sass', 'Javascript'],
         links: [
             {
@@ -33,7 +33,7 @@ const project = [{
     },
     en: {
         title: "Les petits plats",
-        description: "Création d’un algorithme pour un moteur de recherche de recette de cuisine. Le but de ce projet était de tester notre capacité à créer différents algorithmes de recherche, de tester leurs performances et de les décrire sur des diagrammes UML.",
+        description: "Création d’un algorithme pour un moteur de recherche de recettes de cuisine. Le but de ce projet était de tester notre capacité à créer différents algorithmes de recherche, de tester leurs performances et de les décrire sur des diagrammes UML.",
         stacks: ['HTML', 'Sass', 'Javascript'],
         links: [
             {

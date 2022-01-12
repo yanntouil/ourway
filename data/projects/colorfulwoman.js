@@ -14,7 +14,7 @@
     homepage: true,
     fr: {
         title: "Colorful Woman",
-        description: "Montage créer en 2021 pour mon portfolio. Je suis tombé par hasard sur cette image qui m’avait énormément inspiré. Et voilà le résultat après quelques effets localisés afin de mettre en valeur chacune des faces de ce visage déjà très coloré.",
+        description: "Montage crée en 2021 pour mon portfolio. Je suis tombé par hasard sur cette image qui m’avait énormément inspiré. Et voilà le résultat après quelques effets localisés afin de mettre en valeur chacune des faces de ce visage déjà très coloré.",
         applications: ['Photoshop'],
         links: [
             {
@@ -25,7 +25,7 @@
     },
     en: {
         title: "Colorful Woman",
-        description: "Montage créer en 2021 pour mon portfolio. Je suis tombé par hasard sur cette image qui m’avait énormément inspiré. Et voilà le résultat après quelques effets localisés afin de mettre en valeur chacune des faces de ce visage déjà très coloré.",
+        description: "Montage crée en 2021 pour mon portfolio. Je suis tombé par hasard sur cette image qui m’avait énormément inspiré. Et voilà le résultat après quelques effets localisés afin de mettre en valeur chacune des faces de ce visage déjà très coloré.",
         applications: ['Photoshop'],
         links: [
             {

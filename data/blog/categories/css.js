@@ -14,7 +14,7 @@ const category = [{
     fr: {
         title: "CSS & Animation",
         secondary: "Cours, Tuto et tips",
-        description: "Le web-design me tient beaucoup à cœur, je vais essayer de vous transmettre cette passion autour de cours, pour apprendre les bases du CSS mais également aller plus loin avec Sass, Tailwind, ... Et vous partagez une partie des tips pour faire plein animations sympas."
+        description: "Le web-design me tient beaucoup à cœur, je vais essayer de vous transmettre cette passion autour de cours, pour apprendre les bases du CSS mais également aller plus loin avec Sass, Tailwind, ... Et vous partager une partie des tips pour faire plein d’animations sympas."
     },
     en: {
         title: "CSS & Animation",

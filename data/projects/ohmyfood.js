@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "OhMyFood",
-        description: "Intégration d'une maquette mobile, pour un site web de plats à emportés. Ce projet avait pour but de tester nos connaissances sur les animations CSS et notre capacité à créer un responsive desktop sur la base d'une maquette mobile.",
+        description: "Intégration d'une maquette mobile, pour un site web de plats à emporter. Ce projet avait pour but de tester nos connaissances sur les animations CSS et notre capacité à créer un responsive desktop sur la base d'une maquette mobile.",
         stacks: ['HTML', 'Sass'],
         links: [
             {
@@ -29,7 +29,7 @@ const project = [{
     },
     en: {
         title: "OhMyFood",
-        description: "Intégration d'une maquette mobile, pour un site web de plats à emportés. Ce projet avait pour but de tester nos connaissances sur les animations CSS et notre capacité à créer un responsive desktop sur la base d'une maquette mobile.",
+        description: "Intégration d'une maquette mobile, pour un site web de plats à emporter. Ce projet avait pour but de tester nos connaissances sur les animations CSS et notre capacité à créer un responsive desktop sur la base d'une maquette mobile.",
         stacks: ['HTML', 'Sass'],
         links: [
             {

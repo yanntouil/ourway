@@ -14,25 +14,33 @@
     homepage: true,
     fr: {
         title: "Ourway",
-        description: "Mon site personnel, Développé sous React/Next avec toute ma personnalité. Ce projet est encore en cours de finition et sera amené à pas mal changé au cours de l’année 2022. N’hésitez pas à me faire des feedbacks d’aller encore un peu plus loin.",
+        description: "Mon site personnel, Développé sous React/Next avec toute ma personnalité. Ce projet est encore en cours de finition et sera amené à pas mal changer au cours de l’année 2022. N’hésitez pas à me faire des feedbacks, d’aller encore un peu plus loin.",
         stacks: ['React', 'Next', 'Redux', 'Framer motion', 'React Markdown', 'Tailwind'],
-        // links: [
-        //     {
-        //         name: "",
-        //         href: "",
-        //     },
-        // ],
+        links: [
+            {
+                name: "Projet en ligne",
+                href: "https://www.ourway.io",
+            },
+            {
+                name: "Projet sur GitHub",
+                href: "https://github.com/yanntouil/ourway",
+            },
+        ],
     },
     en: {
         title: "Ourway",
-        description: "Mon site personnel, Développé sous React/Next avec toute ma personnalité. Ce projet est encore en cours de finition et sera amené à pas mal changé au cours de l’année 2022. N’hésitez pas à me faire des feedbacks d’aller encore un peu plus loin.",
+        description: "Mon site personnel, Développé sous React/Next avec toute ma personnalité. Ce projet est encore en cours de finition et sera amené à pas mal changer au cours de l’année 2022. N’hésitez pas à me faire des feedbacks, d’aller encore un peu plus loin.",
         stacks: ['React', 'Next', 'Redux', 'Framer motion', 'React Markdown', 'Tailwind'],
-        // links: [
-        //     {
-        //         name: "",
-        //         href: "",
-        //     },
-        // ],
+        links: [
+            {
+                name: "Projet en ligne",
+                href: "https://www.ourway.io",
+            },
+            {
+                name: "Projet sur GitHub",
+                href: "https://github.com/yanntouil/ourway",
+            },
+        ],
     }
 }]
 export default project

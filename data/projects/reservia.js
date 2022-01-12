@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "Reservia",
-        description: "Premier projet de ma formation, le but était principalement de tester nos connaissances en HTML et CSS au travers de ce projets. Au programme grid, flexbox, aspect-ratio, … autour de la page d’accueil d’un site de location d’hébergement.",
+        description: "Premier projet de ma formation, le but était principalement de tester nos connaissances en HTML et CSS au travers de ce projet. Au programme grid, flexbox, aspect-ratio, … autour de la page d’accueil d’un site de location d’hébergement.",
         stacks: ['HTML', 'CSS'],
         links: [
             {
@@ -29,7 +29,7 @@ const project = [{
     },
     en: {
         title: "Reservia",
-        description: "Premier projet de ma formation, le but était principalement de tester nos connaissances en HTML et CSS au travers de ce projets. Au programme grid, flexbox, aspect-ratio, … autour de la page d’accueil d’un site de location d’hébergement.",
+        description: "Premier projet de ma formation, le but était principalement de tester nos connaissances en HTML et CSS au travers de ce projet. Au programme grid, flexbox, aspect-ratio, … autour de la page d’accueil d’un site de location d’hébergement.",
         stacks: ['HTML', 'CSS'],
         links: [
             {

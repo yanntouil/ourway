@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "SportSee",
-        description: "Dashboard d’un site de suivis sportif. Ce projet tournait autour de la création de graphiques personnalisés, la difficulté résidait dans la contrainte du design décrit par la maquette fournis et à la gestion des données asynchrones.",
+        description: "Dashboard d’un site de suivis sportif. Ce projet tournait autour de la création de graphiques personnalisés, la difficulté résidait dans la contrainte du design décrit par la maquette fournie et à la gestion des données asynchrones.",
         stacks: ['React', 'React Router', 'Context', 'Recharts', 'Sass'],
         links: [
             {
@@ -29,7 +29,7 @@ const project = [{
     },
     en: {
         title: "SportSee",
-        description: "Dashboard d’un site de suivis sportif. Ce projet tournait autour de la création de graphiques personnalisés, la difficulté résidait dans la contrainte du design décrit par la maquette fournis et à la gestion des données asynchrones.",
+        description: "Dashboard d’un site de suivis sportif. Ce projet tournait autour de la création de graphiques personnalisés, la difficulté résidait dans la contrainte du design décrit par la maquette fournie et à la gestion des données asynchrones.",
         stacks: ['React', 'React Router', 'Context', 'Recharts', 'Sass'],
         links: [
             {

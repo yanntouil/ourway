@@ -6,7 +6,7 @@ const translation = {
         'highlight-2': "de nouveau ensemble",
         'highlight-3': "de différent ensemble",
         'contact-form': {
-            'title': "Alors n'hésitez plus contactez-moi",
+            'title': "Alors n'hésitez plus, contactez-moi",
             'name': "Nom",
             'email': "Email",
             'phone': "Numéro de téléphone",
@@ -26,12 +26,12 @@ const translation = {
         },
         'modal-sent-error': {
             'title': "Message n'a pas été envoyé",
-            'content': "Une erreur est survenu lors de l'envoie du message, n'hésitez pas à réessayer et si le problème persiste à me contacter par mail",
+            'content': "Une erreur est survenue lors de l'envoi du message, n'hésitez pas à réessayer et si le problème persiste à me contacter par mail",
             'button-close': "Fermer",
         },
         'modal-validation': {
             'title': "Formulaire incomplet",
-            'content': "Le message ne peut être envoyé si tout les champs ne sont pas complétés correctement",
+            'content': "Le message ne peut être envoyé si tous les champs ne sont pas complétés correctement",
             'button-close': "Fermer",
         },
         'modal-message-lock': {

@@ -14,7 +14,7 @@
     homepage: true,
     fr: {
         title: "Carwash Flyer",
-        description: "Voilà mon premier flyer créer sous InDesign à la suite de ma formation été 2021. Au programme création de logo sous Illustrator, détourage et compensation des ombres sur Photoshop et bien sûr mise en page sur InDesign.",
+        description: "Voilà mon premier flyer crée sous InDesign à la suite de ma formation été 2021. Au programme création de logo sous Illustrator, détourage et compensation des ombres sur Photoshop et bien sûr mise en page sur InDesign.",
         applications: ['InDesign', 'Photoshop', 'Illustrator'],
         // links: [
         //     {
@@ -25,7 +25,7 @@
     },
     en: {
         title: "Carwash Flyer",
-        description: "Voilà mon premier flyer créer sous InDesign à la suite de ma formation été 2021. Au programme création de logo sous Illustrator, détourage et compensation des ombres sur Photoshop et bien sûr mise en page sur InDesign.",
+        description: "Voilà mon premier flyer crée sous InDesign à la suite de ma formation été 2021. Au programme création de logo sous Illustrator, détourage et compensation des ombres sur Photoshop et bien sûr mise en page sur InDesign.",
         applications: ['InDesign', 'Photoshop', 'Illustrator'],
         // links: [
         //     {

@@ -14,7 +14,7 @@ const project = [{
     homepage: false,
     fr: {
         title: "Kasa",
-        description: "Premier projet sous React de ma formation. Le but étant l’intégration de la maquette d’un site de location d’hébergement et la création de composants Accordion et Slider pour tester nos connaissances récemment acquises.",
+        description: "Premier projet sous React de ma formation. Le but étant l’intégration de la maquette d’un site de location d’hébergements et la création de composants Accordion et Slider pour tester nos connaissances récemment acquises.",
         stacks: ['React', 'React Router', 'Sass'],
         links: [
             {
@@ -29,7 +29,7 @@ const project = [{
     },
     en: {
         title: "Kasa",
-        description: "Premier projet sous React de ma formation. Le but étant l’intégration de la maquette d’un site de location d’hébergement et la création de composants Accordion et Slider pour tester nos connaissances récemment acquises.",
+        description: "Premier projet sous React de ma formation. Le but étant l’intégration de la maquette d’un site de location d’hébergements et la création de composants Accordion et Slider pour tester nos connaissances récemment acquises.",
         stacks: ['React', 'React Router', 'Sass'],
         links: [
             {

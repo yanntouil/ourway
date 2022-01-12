@@ -14,7 +14,7 @@ const project = [{
     homepage: true,
     fr: {
         title: "Wealth Health",
-        description: "Mon projet préféré… Création d’un Sass RH de gestion d’employés. Ce projet proposait de reprendre un site jQuery et de le migrer en React. Au programme validation de formulaire, création de composant Autocomplete, DatePicker, Modal et d’un DataTable avec recherche et filtre.",
+        description: "Mon projet préféré… Création d’un Sass RH de gestion d’employés. Ce projet proposait de reprendre un site jQuery et de le migrer en React. Au programme validation de formulaires, création de composants Autocomplete, DatePicker, Modal et d’un DataTable avec recherche et filtre.",
         stacks: ['React', 'React Router', 'Redux', 'Redux Thunk', 'Tailwind'],
         links: [
             {
@@ -25,7 +25,7 @@ const project = [{
     },
     en: {
         title: "Wealth Health",
-        description: "Mon projet préféré… Création d’un Sass RH de gestion d’employés. Ce projet proposait de reprendre un site jQuery et de le migrer en React. Au programme validation de formulaire, création de composant Autocomplete, DatePicker, Modal et d’un DataTable avec recherche et filtre.",
+        description: "Mon projet préféré… Création d’un Sass RH de gestion d’employés. Ce projet proposait de reprendre un site jQuery et de le migrer en React. Au programme validation de formulaires, création de composants Autocomplete, DatePicker, Modal et d’un DataTable avec recherche et filtre.",
         stacks: ['React', 'React Router', 'Redux', 'Redux Thunk', 'Tailwind'],
         links: [
             {
