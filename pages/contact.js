@@ -5,18 +5,17 @@ import { contactSelector, translationSelector } from 'app/reducers'
 import { useInterval, useTranslation } from 'app/hooks'
 import config from 'app/config'
 import { mailRegex } from 'app/helpers'
-
+import Image from 'next/image'
 // Components
 import Main from 'components/layout/Main'
 import TextAnimated1 from 'components/ui/TextAnimated1'
-import {  SectionTitle } from 'components/ui/Section'
+import Section, {  SectionTitle } from 'components/ui/Section'
 import Alert, { AlertContent, AlertContentIcon, AlertContentTitle } from 'components/ui/Alert'
 import { Blockquote } from 'components/ui/Typography'
 import { Button } from 'components/ui/Button'
-
 // Images
 import ContactSvg from 'assets/images/contact.svg'
-
+import coverImg from 'assets/images/privacy-policy/cover.jpg'
 // Icons
 import CheckIcon from 'assets/images/icons/light/check.svg'
 import WhistleIcon from 'assets/images/icons/light/whistle.svg'
@@ -113,41 +112,52 @@ export default function Contact() {
      */
     return (
         <>
-            <Main className="overflow-hidden">
-                <div className="max-w-7xl mx-auto">
-                    {/* Header */}
-                    <SectionTitle heading={1}>{__('title')} <TextAnimated1 sentences={[__('highlight-1'), __('highlight-2'), __('highlight-3')]} /></SectionTitle>
-                    {/* Content */}
-                    <div className="relative grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto gap-16">
-                        {/* Contact form */}
-                        <form className="order-2 lg:order-1 flex flex-col gap-4" onSubmit={sendEmail}>
-                            <h2 className="text-2xl ">{__('contact-form.title')}</h2>
-                            <div className="flex flex-col gap-1">
-                                <label htmlFor="contactName" className="font-medium">{__('contact-form.name')}</label>
-                                <input type="text" name="fullname" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.name} onChange={(e) => setContactForm({...contactForm, name: e.target.value})} />
+            <Main className="overflow-hidden" noPaddingX>
+                <section id="contact">
+                    {/* <div className="relative h-80">
+                        <Image 
+                                src={coverImg} 
+                                layout="fill"
+                                objectFit="cover"
+                                priority={true}
+                                alt={__('title')} 
+                            />
+                    </div> */}
+                    <div className="flex flex-col justify-center w-full max-w-7xl px-4 sm:px-8 lg:px-16 pt-16 mx-auto">
+                        {/* Header */}
+                        <SectionTitle heading={1}>{__('title')} <TextAnimated1 sentences={[__('highlight-1'), __('highlight-2'), __('highlight-3')]} /></SectionTitle>
+                        {/* Content */}
+                        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16">
+                            {/* Contact form */}
+                            <form className="order-2 lg:order-1 flex flex-col gap-4" onSubmit={sendEmail}>
+                                <h2 className="text-2xl ">{__('contact-form.title')}</h2>
+                                <div className="flex flex-col gap-1">
+                                    <label htmlFor="contactName" className="font-medium">{__('contact-form.name')}</label>
+                                    <input type="text" name="fullname" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.name} onChange={(e) => setContactForm({...contactForm, name: e.target.value})} />
+                                </div>
+                                <div className="flex flex-col gap-1">
+                                    <label htmlFor="contactName" className="font-medium">{__('contact-form.email')}</label>
+                                    <input type="email" name="email" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.email} onChange={(e) => setContactForm({...contactForm, email: e.target.value})} />
+                                </div>
+                                <div className="flex flex-col gap-1">
+                                    <label htmlFor="contactName" className="font-medium">{__('contact-form.phone')}</label>
+                                    <input type="tel" name="phone" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.phone} onChange={(e) => setContactForm({...contactForm, phone: e.target.value})} />
+                                </div>
+                                <div className="flex flex-col gap-1">
+                                    <label htmlFor="contactName" className="font-medium">{__('contact-form.message')}</label>
+                                    <textarea name="message" id="contactName" rows="3" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500 resize-none"  value={contactForm.message} onChange={(e) => setContactForm({...contactForm, message: e.target.value})} />
+                                </div>
+                                <div>
+                                    <Button type="submit" className="w-full">{__('contact-form.submit')}</Button>
+                                </div>
+                            </form>
+                            {/* Contact image */}
+                            <div  className="order-1 lg:order-2 flex items-center justify-center">
+                                <ContactSvg />
                             </div>
-                            <div className="flex flex-col gap-1">
-                                <label htmlFor="contactName" className="font-medium">{__('contact-form.email')}</label>
-                                <input type="email" name="email" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.email} onChange={(e) => setContactForm({...contactForm, email: e.target.value})} />
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <label htmlFor="contactName" className="font-medium">{__('contact-form.phone')}</label>
-                                <input type="tel" name="phone" id="contactName" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500" value={contactForm.phone} onChange={(e) => setContactForm({...contactForm, phone: e.target.value})} />
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <label htmlFor="contactName" className="font-medium">{__('contact-form.message')}</label>
-                                <textarea name="message" id="contactName" rows="3" className="px-4 py-2 rounded border border-secondary-600 text-secondary-800 outline-none focus:border-primary-600 focus:ring-2 focus:ring-primary-500 resize-none"  value={contactForm.message} onChange={(e) => setContactForm({...contactForm, message: e.target.value})} />
-                            </div>
-                            <div>
-                                <Button type="submit" className="w-full">{__('contact-form.submit')}</Button>
-                            </div>
-                        </form>
-                        {/* Contact image */}
-                        <div  className="order-1 lg:order-2 flex items-center justify-center">
-                            <ContactSvg />
                         </div>
                     </div>
-                </div>
+                </section>
             </Main>
             {/* Modal sent */}
             <Alert show={modalSent} setShow={setModalSent}>
