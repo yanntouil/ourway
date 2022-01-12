@@ -1,7 +1,7 @@
-import React, {  } from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useDispatch, useSelector } from 'react-redux'
 import { layoutSelector } from 'app/reducers/layout/layoutSelectors'
 import { className } from 'app/helpers'
 import { useResponsive, useTranslation } from 'app/hooks'
@@ -12,6 +12,7 @@ import Menu from 'components/layout/Menu'
 import BurgerEnIcon from 'assets/images/flags/burger-flag-en.svg'
 import BurgerFrIcon from 'assets/images/flags/burger-flag-fr.svg'
 import { translationSelector } from 'app/reducers'
+import { useState } from 'react'
 
 /**
  * Display header
@@ -65,7 +66,13 @@ export default function Header() {
         animate: {opacity: 1, x: 0},
         exit: {opacity: 0},
     }
-            
+    /**
+     * Hack to fix burger display bug on prerender
+     */
+    const [render, setRender] = useState(false)
+    useEffect(() => {
+        setRender(true)
+    }, [currentLanguage])
     /**
      * Render
      */
@@ -103,18 +110,18 @@ export default function Header() {
                                 </Link>
                             </li>
                         ))}
-                        <li>
+                        {render && (// Hack to fix burger display bug on prerender
                             <button
                                 type="button" 
                                 className="flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16 p-4 rounded-full outline-none text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:text-primary-600 dark:focus:text-primary-400     transition-colors duration-300 ease-in-out"
                                 onClick={openMenu}
                             >   
-                                {currentLanguage === 'en' ? 
-                                    (<BurgerEnIcon className="fill-current" aria-hidden="true" />) :
-                                    (<BurgerFrIcon className="fill-current" aria-hidden="true" />)
-                                }
+                                {currentLanguage === 'en' && (<BurgerEnIcon className="fill-current" aria-hidden="true" />)}
+                                {currentLanguage === 'fr' && (<BurgerFrIcon className="fill-current" aria-hidden="true" />)}
                                 <span className="sr-only">{__('layout.open-menu')}</span>
                             </button>
+                        )}
+                        <li>
                         </li>
                     </ul>
                 </nav>
