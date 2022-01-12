@@ -17,8 +17,8 @@ export default function Error404() {
 
     return (
         <Main noPaddingTop  >
-            <div className="relative max-w-7xl mx-auto mt-16 sm:mt-24 xl:mt-0">
-                <Error404Svg className="" />
+            <div className="relative max-w-7xl mx-auto mt-16 sm:mt-24 xl:mt-4">
+                <Error404Svg />
                 <div className="absolute right-0 sm:right-1/4 bottom-0 left-0 sm:left-1/4 flex justify-center h-1/4 sm:pt-4 text-center font-gochi-hand text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-4xl">
                     {__('message-404')}
                 </div>

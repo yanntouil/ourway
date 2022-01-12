@@ -106,11 +106,13 @@ export default function Header() {
                         <li>
                             <button
                                 type="button" 
-                                className="flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16 rounded-full outline-none text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:text-primary-600 dark:focus:text-primary-400     transition-colors duration-300 ease-in-out"
+                                className="flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16 p-4 rounded-full outline-none text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:text-primary-600 dark:focus:text-primary-400     transition-colors duration-300 ease-in-out"
                                 onClick={openMenu}
                             >   
-                                {currentLanguage === 'en' && (<BurgerEnIcon className="fill-current w-8 h-8" aria-hidden="true" />)}
-                                {currentLanguage === 'fr' && (<BurgerFrIcon className="fill-current w-8 h-8" aria-hidden="true" />)}
+                                {currentLanguage === 'en' ? 
+                                    (<BurgerEnIcon className="fill-current" aria-hidden="true" />) :
+                                    (<BurgerFrIcon className="fill-current" aria-hidden="true" />)
+                                }
                                 <span className="sr-only">{__('layout.open-menu')}</span>
                             </button>
                         </li>
