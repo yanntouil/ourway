@@ -2,7 +2,7 @@
  * Project website 01 Ourway
  */ 
  import image from 'assets/images/portfolio/website/ourway.jpg'
- import thumbnail from 'assets/images/portfolio/design/bluehairedvacationer.jpg'
+ import thumbnail from 'assets/images/portfolio/website/ourway.jpg'
   
  const project = [{
     id: 'website-01',

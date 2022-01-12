@@ -173,6 +173,18 @@ export function ProjectsSlider ({ slides, slideIndex, setSlideIndex, gridCols = 
     })
 
     /**
+     * goToSlide
+     * @param {Number} index 
+     */
+    const goToSlide = (index) => {
+        setSlideIndex(index)
+        animate.start({
+            x: -slider.slideWidth * slideIndex - slideIndex * gap,
+            transition: {type: "spring", bounce: 0},
+        })
+    }
+
+    /**
      * Watcher: Set and refresh track width, slide width, drag contraint left and drag position on window resize
      */
     useEffect(() => {
