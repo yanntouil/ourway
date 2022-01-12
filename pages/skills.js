@@ -62,20 +62,20 @@ export default function Skills() {
                 <div className="relative flex flex-col justify-center" style={{minHeight: 'calc(100vh - 3rem)'}}>
                     {/* Background */}
                     <div className="absolute inset-0 grid grid-rows-2">
-                        <div className="grid grid-cols-6 md:grid-cols-12 grid-rows-3 h-full gap-8 p-8 bg-primary-600 dark:bg-secondary-700">
-                            <div className="col-span-3 bg-primary-500 dark:bg-secondary-800"></div>
+                        <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-12 sm:grid-rows-6 lg:grid-rows-3 h-full gap-8 p-8 bg-primary-600 dark:bg-secondary-700">
+                            <div className="col-span-2 lg:col-span-3 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="row-span-2  bg-primary-500 dark:bg-secondary-800"></div>
-                            <div className="col-span-3 row-span-3 bg-primary-500 dark:bg-secondary-800"></div>
-                            <div className="col-span-2 row-span-2 bg-primary-500 dark:bg-secondary-800"></div>
+                            <div className="col-span-2 sm:col-span-3 row-span-3 bg-primary-500 dark:bg-secondary-800"></div>
+                            <div className="sm:col-span-2 row-span-2 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="col-span-2 row-span-2 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="row-span-2 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="col-span-2 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="row-span-2 bg-primary-500 dark:bg-secondary-800"></div>
-                            <div className="col-span-3 bg-primary-500 dark:bg-secondary-800"></div>
+                            <div className="col-span-2 lg:col-span-3 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="col-span-2 bg-primary-500 dark:bg-secondary-800"></div>
                             <div className="bg-primary-500 dark:bg-secondary-800"></div>
-                            <div className="bg-primary-500 dark:bg-secondary-800"></div>
+                            <div className="col-span-2 sm:col-span-3 lg:col-span-1 bg-primary-500 dark:bg-secondary-800"></div>
                         </div>
                         <div className="relative h-full bg-gray-800">
                             <Image src={integrationImg} layout="fill" objectFit="cover" priority={true} alt="Integration" />

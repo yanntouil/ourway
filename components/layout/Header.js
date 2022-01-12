@@ -80,43 +80,43 @@ export default function Header() {
         <header className="fixed top-0 inset-x-0 z-10" id="header">
             <div className="flex justify-between pl-4 sm:pl-8 lg:pl-16 pr-2 sm:pr-4 lg:pr-12 h-16 sm:h-24 bg-white/75 dark:bg-secondary-800/75 backdrop-blur-sm">
                 <div className="flex justify-between w-full">
-                <Link href="/">
-                    <a className="flex mt-2 -mb-2 py-2 sm:py-4">
-                        <Logo className="h-12 sm:h-16 outline-none fill-current text-secondary-800 dark:text-white" aria-hidden="true" />
-                        <span className="sr-only">{pageTitle}</span>
-                    </a>
-                </Link>
-                <nav className="" aria-label="Menu">
-                    <ul className="flex items-center p-2 sm:p-4 gap-4">
-                        {media.min('lg') && menu.map((link, index) => (
-                            <li key={`Header-${index}`}>
-                                <Link href={link.pathname} /*scroll={false}*/>
-                                    <a className={className([
-                                        'block p-4 outline-none text-lg leading-none font-semibold focus:underline transition-colors duration-300 ease-in-out',
-                                        linkIsActive(link) || childLinkIsActive(link) ? 
-                                            'text-primary-600 dark:text-primary-400' : 
-                                            'text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400',
-                                    ])}>
-                                        {__('menu.' + link.name)}
-                                    </a>
-                                </Link>
+                    <Link href="/">
+                        <a className="flex mt-2 -mb-2 py-2 sm:py-4">
+                            <Logo className="h-12 sm:h-16 outline-none fill-current text-secondary-800 dark:text-white" aria-hidden="true" />
+                            <span className="sr-only">{pageTitle}</span>
+                        </a>
+                    </Link>
+                    <nav className="" aria-label="Menu">
+                        <ul className="flex items-center p-2 sm:p-4 gap-4">
+                            {media.min('lg') && menu.map((link, index) => (
+                                <li key={`Header-${index}`}>
+                                    <Link href={link.pathname} /*scroll={false}*/>
+                                        <a className={className([
+                                            'block p-4 outline-none text-lg leading-none font-semibold focus:underline transition-colors duration-300 ease-in-out',
+                                            linkIsActive(link) || childLinkIsActive(link) ? 
+                                                'text-primary-600 dark:text-primary-400' : 
+                                                'text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400',
+                                        ])}>
+                                            {__('menu.' + link.name)}
+                                        </a>
+                                    </Link>
+                                </li>
+                            ))}
+                            <li>
+                                {render && (// Hack to fix burger display bug on prerender
+                                    <button
+                                        type="button" 
+                                        className="flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16 sm:p-4 rounded-full outline-none text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:text-primary-600 dark:focus:text-primary-400     transition-colors duration-300 ease-in-out"
+                                        onClick={openMenu}
+                                    >   
+                                        {currentLanguage === 'en' && (<BurgerEnIcon className="fill-current w-8 h-8" aria-hidden="true" />)}
+                                        {currentLanguage === 'fr' && (<BurgerFrIcon className="fill-current w-8 h-8" aria-hidden="true" />)}
+                                        <span className="sr-only">{__('layout.open-menu')}</span>
+                                    </button>
+                                )}
                             </li>
-                        ))}
-                        {render && (// Hack to fix burger display bug on prerender
-                            <button
-                                type="button" 
-                                className="flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16 p-4 rounded-full outline-none text-secondary-800 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:text-primary-600 dark:focus:text-primary-400     transition-colors duration-300 ease-in-out"
-                                onClick={openMenu}
-                            >   
-                                {currentLanguage === 'en' && (<BurgerEnIcon className="fill-current" aria-hidden="true" />)}
-                                {currentLanguage === 'fr' && (<BurgerFrIcon className="fill-current" aria-hidden="true" />)}
-                                <span className="sr-only">{__('layout.open-menu')}</span>
-                            </button>
-                        )}
-                        <li>
-                        </li>
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
                 </div>
             </div>
             <Menu/>
