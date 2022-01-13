@@ -136,14 +136,14 @@ export default function SliderWild({ slides, sliderTiming = 10 }) {
                         </div>
                         {/* Slide image */}
                         <div className="relative lg:col-start-4 lg:col-span-9 h-full">
-                            <Image 
-                                src={slide.cover} 
+                            {(slide.images && slide.images.cover) && <Image 
+                                src={slide.images.cover} 
                                 layout="fill"
                                 objectFit="cover"
                                 priority={true}
                                 draggable="false" 
                                 alt={slide.title} 
-                            />
+                            />}
                         </div>
                     </div>
                 ))}

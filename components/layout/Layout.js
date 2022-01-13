@@ -43,7 +43,14 @@ export default function Layout({ children }) {
                     locale: config.translation.locale[config.translation.defaultLanguage].replace('-', '_'),
                     url: config.siteurl + router.asPath,
                     site_name: config.sitename,
-                    defaultTitle: pageTitle,
+                    defaultTitle: config.sitename,
+                    description: config.sitedescription,
+                }}
+                twitter={{
+                    site: '@TouilYann',
+                    creator: '@TouilYann',
+                    card: 'summary',
+                    cardType: 'summary_large_image',
                 }}
             />
             <Header />

@@ -6,13 +6,12 @@ import cover from 'assets/images/blog/articles/vue/001-let-s-go-discover-vue.jpg
 import banner from 'assets/images/blog/articles/vue/001-let-s-go-discover-vue-banner.jpg'
  
  const article = [{
-    id: uuid(),
+    id: 'be819ff0-31e5-404d-b261-5f50d8b5aba8',
     name: '',
     hero: true,
-    cover: cover,
-    banner: banner,
     images: {
-        cover: '/images/blog/articles/vue/001-let-s-go-discover-vue.jpg'
+        cover: '/images/blog/posts/vue/be819ff0-31e5-404d-b261-5f50d8b5aba8/cover.jpg',
+        banner: '/images/blog/posts/vue/be819ff0-31e5-404d-b261-5f50d8b5aba8/banner.jpg',
     },
     slug: 'let-s-go-discover-vue',
     type: 'discover',

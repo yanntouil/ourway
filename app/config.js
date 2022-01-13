@@ -3,6 +3,8 @@ import{ init as emailJSInit } from '@emailjs/browser'
 const config = {
     sitename: 'Ourway',
     siteurl: 'https://portfolio.ourway.io',
+    sitetag: ['portfolio', 'blog', 'vue', 'react', 'webdesign', 'design', 'développement', 'javascript'],
+    sitedescription: 'Bienvenue sur mon portfolio',
     page: {
         title: 'Ourway',
     },

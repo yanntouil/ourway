@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useRouter } from 'next/router'
 import Image from 'next/image'
-import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 import { useTranslation } from 'app/hooks'
 import { translationSelector } from 'app/reducers'
@@ -37,17 +35,20 @@ export default function BlogArticle ({params}) {
         <>
             <NextSeo
                 openGraph={{
-                    type: 'article',
-                    article: {
-                        tags: article.tags ? article.tags.join(' ') : '',
-                        publishedTime: article.created,
-                    },
                     title: article.title,
                     description: article.description,
+                    type: 'article',
+                    article: {
+                        publishedTime: article.created,
+                        modifiedTime: article.created,
+                        section: article.category,
+                        tags: article.tags ?? [],
+                        authors: [config.author.twitter]
+                    },
                     images: [{
-                        url: config.siteurl + article.images.cover,
-                        width: 1920,
-                        height: 1080,
+                        url: `${config.siteurl}/images/blog/posts/${article.id}/opengraph.jpg`,
+                        width: 1200,
+                        height: 630,
                         alt: article.title,
                     }]
                 }}
@@ -56,10 +57,10 @@ export default function BlogArticle ({params}) {
                 <article>
                     {/* Image */}
                     <div className="relative aspect-[16/4] mt-16 sm:mt-24 xl:mt-0">
-                        {article.banner ? (
-                            <Image src={article.banner} alt={article.title} layout="fill" objectFit="cover" priority={true} />
+                        {article.images.banner ? (
+                            <Image src={article.images.banner} alt={article.title} layout="fill" objectFit="cover" priority={true} />
                         ) : (
-                            <Image src={article.cover} alt={article.title} layout="fill" objectFit="cover" priority={true} />
+                            <Image src={article.images.cover} alt={article.title} layout="fill" objectFit="cover" priority={true} />
                         )}
                     </div>
                     {/* Heading */}
