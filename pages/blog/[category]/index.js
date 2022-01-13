@@ -49,9 +49,9 @@ export default function BlogCategory({ params }) {
         <>
             <NextSeo
                 openGraph={{
-                    title: `${config.sitename} | ${__('page-title')} : ${category.title}}`,
+                    title: `${config.sitename} | ${__('page-title')} : ${category.title}`,
                     description: category.description,
-                    images: [{url: `${config.siteurl}/images/blog/categories/${category.name}/cover.jpg`, width: 1200, height: 630, alt: `${__('page-title')} : ${category.title}` }]
+                    images: [{url: `${config.siteurl}/images/blog/categories/${category.name}/opengraph.jpg`, width: 1200, height: 630, alt: `${__('page-title')} : ${category.title}` }]
                 }}
             />
             <Main noPaddingX  noPaddingTop>

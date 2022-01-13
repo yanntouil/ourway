@@ -29,7 +29,7 @@ export default function ManageCookies() {
                 openGraph={{
                     title: `${config.sitename} | ${__('page-title')}`,
                     description: __('page-description'),
-                    images: [{url: `${config.siteurl}/images/portfolio/opengraph.jpg`, width: 1200, height: 630, alt: __('page-title') }]
+                    images: [{url: `${config.siteurl}/images/manage-cookies/opengraph.jpg`, width: 1200, height: 630, alt: __('page-title') }]
                 }}
             />
             <Main>

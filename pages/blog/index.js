@@ -43,7 +43,6 @@ export default function Index() {
     const [ categoryOpened, setCategoryOpened ] = useState('')
 
     const [ categories ] = useState(categoriesList.map(category => ({...category, ...category[currentLanguage]})))
-    console.log(categories);
 
     /**
      * Render

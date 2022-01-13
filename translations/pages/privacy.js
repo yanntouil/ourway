@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Politique de confidentialité",
+        'page-description': "Politique de confidentialité relative au RGPD",
         'title': "Politique de confidentialité",
         'privacy-policy': `
 ## 1. Gestion des données personnelles.

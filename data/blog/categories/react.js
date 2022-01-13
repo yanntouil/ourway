@@ -5,7 +5,7 @@
   
 const category = [{
     id: 2,
-    name: 'React',
+    name: 'react',
     color: 'sky',
     images: {
         cover: '/images/blog/categories/react/cover.jpg',
