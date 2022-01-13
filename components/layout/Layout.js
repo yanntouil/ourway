@@ -48,7 +48,7 @@ export default function Layout({ children }) {
                         url: config.siteurl + '/images/blog/articles/vue/001-let-s-go-discover-vue.jpg',
                         width: 1920,
                         height: 1080,
-                        alt: article.title,
+                        alt: 'lorem',
                     }],
                 }}
                 twitter={{
