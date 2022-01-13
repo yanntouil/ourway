@@ -1,8 +1,9 @@
 const translation = {
     fr: {
         'page-title': "Blog",
+        'page-description': "Petit tour d'horizon de mes passions orientées sur le design, la gestion de projets et le développement web. Mon blog est encore très nouveau alors soyez indulgent sur le contenu, Ourway ne s'est pas fait en un jour ❤️.",
         'title': "Bienvenue sur mon blog",
-        'secondary': "Petit tour d'horizon de mes passions orientées sur le design, la gestion de projets et le développement web. Mon blog est encore très nouveau alors soyez indulgent sur le contenu, Ourway ne s'est pas fait en un jour ❤️. ",
+        'secondary': "Petit tour d'horizon de mes passions orientées sur le design, la gestion de projets et le développement web. Mon blog est encore très nouveau alors soyez indulgent sur le contenu, Ourway ne s'est pas fait en un jour ❤️.",
         'categories': "Catégories",
         'last-articles': "Les derniers articles",
         'created-at': "Publier le ",

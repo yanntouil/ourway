@@ -2,15 +2,15 @@
  * Category 6 Design
  */
 
-import cover from 'assets/images/blog/categories/design-cover.jpg'
-import background from 'assets/images/blog/categories/design-background.jpg'
 
 const category = [{
     id: 6,
     name: 'design',
     color: 'amber',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/design/cover.jpg',
+        background: '/images/blog/categories/design/background.jpg'
+    },
     fr: {
         title: "Design",
         secondary: "Tuto et Tips",

@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Compétences",
+        'page-description': "Bienvenue sur page de compétences",
         'title': "Compétences",
         'integration': {
             'title': "Intégration",

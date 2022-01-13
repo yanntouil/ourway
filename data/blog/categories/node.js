@@ -2,15 +2,15 @@
  * Category 3 Node
  */
 
-import cover from 'assets/images/blog/categories/node-cover.jpg'
-import background from 'assets/images/blog/categories/node-background.jpg'
 
 const category = [{
     id: 3,
     name: 'node',
     color: 'green',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/node/cover.jpg',
+        background: '/images/blog/categories/node/background.jpg'
+    },
     fr: {
         title: "Node",
         secondary: "Découverte, Apprentissage",

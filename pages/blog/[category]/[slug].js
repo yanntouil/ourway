@@ -16,7 +16,7 @@ import config from 'app/config'
 /**
  * Page Blog Article
  */
-export default function BlogArticle ({params}) {
+export default function BlogArticle ({ params }) {
     /**
      * Page settings
      */
@@ -77,6 +77,7 @@ export default function BlogArticle ({params}) {
         </>
     )
 }
+
 export function getServerSideProps(context) {
     return {
       props: {params: context.params}

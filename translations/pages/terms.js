@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Mentions légales",
+        'page-description': "Mentions Légales relative au RGPD",
         'title': "Mentions légales",
         'terms': `
 ## Définitions

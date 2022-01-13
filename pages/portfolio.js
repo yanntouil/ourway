@@ -2,11 +2,13 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 import { motion, useAnimation } from 'framer-motion'
 import { v4 as uuid } from 'uuid'
 import { useResponsive, useTranslation, useWindowSize } from 'app/hooks'
 import { translationSelector } from 'app/reducers'
 import { getDragConstraintsLeft, getSlideWidth, getTrackWidth, handleDragEnd, pagination } from 'app/helpers'
+import config from 'app/config'
 import projectsList from 'data/projects'
 // Components
 import Main from 'components/layout/Main'
@@ -71,40 +73,49 @@ export default function Portfolio() {
      * Render
      */
     return (
-        <Main noPaddingX noPaddingTop>
-            <h1 className="sr-only">{__('page-title')}</h1>
-            {/* Hero Slider */}
-            <Section className="h-screen" noPadding>
-                <h2 className="sr-only">{__('news')}</h2>
-                <SliderFullscreen 
-                    slides={projects.filter(// Hero projects
-                        project => project.hero
-                    )}
-                />
-            </Section>
+        <>
+            <NextSeo
+                openGraph={{
+                    title: `${config.sitename} | ${__('page-title')}`,
+                    description: __('page-description'),
+                    images: [{url: `${config.siteurl}/images/portfolio/opengraph.jpg`, width: 1200, height: 630, alt: __('page-title') }]
+                }}
+            />
+            <Main noPaddingX noPaddingTop>
+                <h1 className="sr-only">{__('page-title')}</h1>
+                {/* Hero Slider */}
+                <Section className="h-screen" noPadding>
+                    <h2 className="sr-only">{__('news')}</h2>
+                    <SliderFullscreen 
+                        slides={projects.filter(// Hero projects
+                            project => project.hero
+                        )}
+                    />
+                </Section>
 
-            {/* Portfolio */}
-            <Section>
-                <div className="flex flex-col justify-center w-full max-w-7xl min-h-screen-header px-4 sm:px-8 lg:px-16 mx-auto">
-                    <SectionTitle>{__('title')}</SectionTitle>
-                    <SectionSecondary>{__('secondary')}</SectionSecondary>
-                    <div className="grid grid-cols-1 xl:grid-rows-7 gap-8 mt-8">
-                        <ProjectsCategories {...{categories, category, toggleCategory}} />
-                        <ProjectsSlider 
-                            slides={category === '' ? // all projects or active category
-                                projects : 
-                                projects.filter(
-                                    project => project.category === category
-                                )
-                            }
+                {/* Portfolio */}
+                <Section>
+                    <div className="flex flex-col justify-center w-full max-w-7xl min-h-screen-header px-4 sm:px-8 lg:px-16 mx-auto">
+                        <SectionTitle>{__('title')}</SectionTitle>
+                        <SectionSecondary>{__('secondary')}</SectionSecondary>
+                        <div className="grid grid-cols-1 xl:grid-rows-7 gap-8 mt-8">
+                            <ProjectsCategories {...{categories, category, toggleCategory}} />
+                            <ProjectsSlider 
+                                slides={category === '' ? // all projects or active category
+                                    projects : 
+                                    projects.filter(
+                                        project => project.category === category
+                                    )
+                                }
 
-                            {...{slideIndex, setSlideIndex}}
-                        />
+                                {...{slideIndex, setSlideIndex}}
+                            />
+                        </div>
                     </div>
-                </div>
-            </Section>
+                </Section>
 
-        </Main>
+            </Main>
+        </>
     )
 }
 

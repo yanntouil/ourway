@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Réglages des cookies",
+        'page-description': "La page de gesion des cookies est encore en cous de rédaction",
         'title': "Cette page est en cours de rédaction",
         'secondary': "Nous travaillons tous très dur à l'élaboration de cette page (enfin certains plus que d'autre), alors n'hésitez pas à repasser par ici dans quelques jours.",
     },

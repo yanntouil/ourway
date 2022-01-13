@@ -2,15 +2,15 @@
  * Category 2 React
  */
 
-import cover from 'assets/images/blog/categories/react-cover.jpg'
-import background from 'assets/images/blog/categories/react-background.jpg'
   
 const category = [{
     id: 2,
     name: 'React',
     color: 'sky',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/react/cover.jpg',
+        background: '/images/blog/categories/react/background.jpg'
+    },
     fr: {
         title: "React",
         secondary: "Actualité, Tuto et Tips",

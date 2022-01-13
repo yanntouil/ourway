@@ -2,15 +2,15 @@
  * Category 5 CSS & Animation
  */
 
-import cover from 'assets/images/blog/categories/css-cover.jpg'
-import background from 'assets/images/blog/categories/css-background.jpg'
  
 const category = [{
     id: 5,
     name: "css",
     color: 'rose',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/css/cover.jpg',
+        background: '/images/blog/categories/css/background.jpg'
+    },
     fr: {
         title: "CSS & Animation",
         secondary: "Cours, Tuto et tips",

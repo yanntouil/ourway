@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Portfolio",
+        'page-description': "Bienvenu sur mon portfolio",
         'news': "Actu",
         'title': "Bienvenue sur mon portfolio",
         'secondary': "L'année 2021 a été très chargée entre formation et reconversion, je n'ai pas grand-chose actuellement à vous proposer, mais j'y consacre tous mes temps libres, alors n'hésitez pas à repassez par ici. En attendant vous pouvez jeter un petit coup d'œil, n'hésitez pas à filtrer les projets par catégorie en cliquant sur les images ci-dessous.",

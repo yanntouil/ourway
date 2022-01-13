@@ -2,15 +2,15 @@
  * Category 1 Vue
  */
 
-import cover from 'assets/images/blog/categories/vue-cover.jpg'
-import background from 'assets/images/blog/categories/vue-background.jpg'
-  
+
 const category = [{
     id: 1,
     name: 'vue',
     color: 'emerald',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/vue/cover.jpg',
+        background: '/images/blog/categories/vue/background.jpg'
+    },
     fr: {
         title: "Vue",
         secondary: "Actualité, Tuto et Tips",

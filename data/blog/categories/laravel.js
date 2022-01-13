@@ -2,15 +2,15 @@
  * Category 4 Laravel
  */
 
-import cover from 'assets/images/blog/categories/laravel-cover.jpg'
-import background from 'assets/images/blog/categories/laravel-background.jpg'
 
 const category = [{
     id: 4,
     name: 'laravel',
     color: 'red',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/laravel/cover.jpg',
+        background: '/images/blog/categories/laravel/background.jpg'
+    },
     fr: {
         title: "Laravel",
         secondary: "Cours, Tuto et Tips",

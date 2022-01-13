@@ -18,7 +18,7 @@ import letSGoDiscoverVue from './001-let-s-go-discover-vue'
 
 
 const articles = [
-    ...lorem1, ...lorem2, ...lorem3, ...lorem4, ...lorem5, ...lorem6, ...lorem7, ...lorem8,
+    //...lorem1, ...lorem2, ...lorem3, ...lorem4, ...lorem5, ...lorem6, ...lorem7, ...lorem8,
     ...letSGoDiscoverVue,
 ]
 export default articles

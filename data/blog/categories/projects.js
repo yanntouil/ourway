@@ -2,15 +2,15 @@
  * Category 2 Project
  */
 
-import cover from 'assets/images/blog/categories/projects-cover.jpg'
-import background from 'assets/images/blog/categories/projects-background.jpg'
 
 const category = [{
     id: 8,
     name: 'projects',
     color: 'lime',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/projects/cover.jpg',
+        background: '/images/blog/categories/projects/background.jpg'
+    },
     fr: {
         title: "Mes projets",
         secondary: "Actualité, Retour d'experience et Projection",

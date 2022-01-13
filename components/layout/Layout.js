@@ -43,7 +43,7 @@ export default function Layout({ children }) {
                     locale: config.translation.locale[config.translation.defaultLanguage].replace('-', '_'),
                     url: config.siteurl + router.asPath,
                     site_name: config.sitename,
-                    defaultTitle: config.sitename,
+                    titleTemplate: `${config.sitename} | %s`,
                     description: config.sitedescription,
                 }}
                 twitter={{

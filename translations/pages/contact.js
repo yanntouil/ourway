@@ -1,6 +1,7 @@
 const translation = {
     fr: {
         'page-title': "Contact",
+        'page-description': "Commençons à créer quelque chose ensemble, alors n'hésitez plus, contactez-moi",
         'title': "Commençons à créer quelque chose",
         'highlight-1': "de spécial ensemble",
         'highlight-2': "de nouveau ensemble",

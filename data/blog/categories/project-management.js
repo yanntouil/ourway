@@ -2,15 +2,15 @@
  * Category 7 Project management
  */
 
-import cover from 'assets/images/blog/categories/project-management-cover.jpg'
-import background from 'assets/images/blog/categories/project-management-background.jpg'
 
 const category = [{
     id: 7,
     name: 'project-management',
     color: 'indigo',
-    cover: cover,
-    background: background,
+    images: {
+        cover: '/images/blog/categories/project-management/cover.jpg',
+        background: '/images/blog/categories/project-management/background.jpg'
+    },
     fr: {
         title: "Gestion de projet",
         secondary: "Cours et Retour d'expérience",

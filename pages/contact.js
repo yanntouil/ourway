@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { NextSeo } from 'next-seo'
 import emailjs from '@emailjs/browser'
 import { contactSelector, translationSelector } from 'app/reducers'
 import { useInterval, useTranslation } from 'app/hooks'
 import config from 'app/config'
 import { mailRegex } from 'app/helpers'
-import Image from 'next/image'
 // Components
 import Main from 'components/layout/Main'
 import TextAnimated1 from 'components/ui/TextAnimated1'
@@ -112,6 +112,13 @@ export default function Contact() {
      */
     return (
         <>
+            <NextSeo
+                openGraph={{
+                    title: `${config.sitename} | ${__('page-title')}`,
+                    description: __('page-description'),
+                    images: [{url: `${config.siteurl}/images/portfolio/opengraph.jpg`, width: 1200, height: 630, alt: __('page-title') }]
+                }}
+            />
             <Main className="overflow-hidden" noPaddingX>
                 <section id="contact">
                     {/* <div className="relative h-80">
