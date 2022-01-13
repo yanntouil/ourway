@@ -9,7 +9,7 @@ import blogArticles from 'data/blog/articles'
 // Components
 import Error404 from 'pages/404'
 import Main from 'components/layout/Main'
-import { SectionTitle } from 'components/ui/Section'
+import { SectionSecondary, SectionTitle } from 'components/ui/Section'
 import Markdown from 'components/ui/Markdown'
 
 /**
@@ -36,12 +36,17 @@ export default function BlogArticle () {
         <Main noPaddingX noPaddingTop>
             <article>
                 {/* Image */}
-                <div className="relative aspect-[16/4]">
-                    <Image src={article.cover} alt={article.title} layout="fill" objectFit="cover" priority={true} />
+                <div className="relative aspect-[16/4] mt-16 sm:mt-24 xl:mt-0">
+                    {article.banner ? (
+                        <Image src={article.banner} alt={article.title} layout="fill" objectFit="cover" priority={true} />
+                    ) : (
+                        <Image src={article.cover} alt={article.title} layout="fill" objectFit="cover" priority={true} />
+                    )}
                 </div>
                 {/* Heading */}
                 <div className="relative flex flex-col mt-12 mb-8 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
                     <SectionTitle>{article.title}</SectionTitle>
+                    <SectionSecondary>{article.description}</SectionSecondary>
                 </div>
                 {/* Content */}
                 <div className="relative flex flex-col max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">

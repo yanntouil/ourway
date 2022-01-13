@@ -10,6 +10,7 @@ import lorem6 from './lorem6'
 import lorem7 from './lorem7'
 import lorem8 from './lorem8'
 
+import letSGoDiscoverVue from './001-let-s-go-discover-vue'
 
 
 
@@ -18,6 +19,7 @@ import lorem8 from './lorem8'
 
 const articles = [
     ...lorem1, ...lorem2, ...lorem3, ...lorem4, ...lorem5, ...lorem6, ...lorem7, ...lorem8,
+    ...letSGoDiscoverVue,
 ]
 export default articles
 

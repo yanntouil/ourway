@@ -30,6 +30,9 @@ const translation = {
             'terms': "Mentions légales",
             'privacy': "Politique de confidentialité",
             'cookies': "Réglages des cookies",
+        },
+        blog: {
+            'go-to-article' : "Aller à l'article"
         }
     },
     en: {
@@ -59,6 +62,9 @@ const translation = {
             'terms': "Terms",
             'privacy': "Privacy Policy",
             'cookies': "Manage cookies",
+        },
+        blog: {
+            'go-to-article' : "Go to article"
         }
     },
 }

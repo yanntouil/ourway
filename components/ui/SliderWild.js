@@ -2,7 +2,10 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence, useMotionValue, useTransform, useAnimation } from 'framer-motion'
 import { className } from 'app/helpers'
-import { useWindowSize } from 'app/hooks'
+import { useTranslation, useWindowSize } from 'app/hooks'
+import Link from 'next/link'
+// Icons
+import AngleRightIcon from 'assets/images/icons/light/angle-right.svg'
 
 
 /**
@@ -13,10 +16,11 @@ export default function SliderWild({ slides, sliderTiming = 10 }) {
     /**
      * Hooks
      */
-     const [slideIndex, setSlideIndex] = useState(0)
-     const wrapperRef = useRef(null)
-     const trackRef = useRef(null)
-     const controls = useAnimation()
+    const [slideIndex, setSlideIndex] = useState(0)
+    const wrapperRef = useRef(null)
+    const trackRef = useRef(null)
+    const controls = useAnimation()
+    const __ = useTranslation('layout')
 
     /**
      * Move track to an index
@@ -121,6 +125,12 @@ export default function SliderWild({ slides, sliderTiming = 10 }) {
                                 <div className="relative z-2 p-8 bg-secondary-200/75 dark:bg-secondary-900/75">
                                     <h3 className="mb-4 text-3xl font-semibold">{slide.title}</h3>
                                     <p className="text-lg">{slide.description}</p>
+                                    <Link href={`/blog/${slide.category}/${slide.slug}`}>
+                                        <a className="flex items-center pt-2 text-lg">
+                                            {__('blog.go-to-article')} 
+                                            <AngleRightIcon className="w-6 h-6 fill-current"/>
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

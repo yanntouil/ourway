@@ -50,8 +50,9 @@ export default function Home() {
     /** @state articles Hero */
     const [ articlesHero ] = useState(articles
         .filter(article => article.hero)
-        .map((article) => ({ ...article, ...article[currentLanguage]}))
+        .sort((a, b) => (new Date(b.created)) - (new Date(a.created)))
         .slice(0, 5)
+        .map((article) => ({ ...article, ...article[currentLanguage]}))
     )
 
     /**

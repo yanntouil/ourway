@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import Link from 'next/link'
 import { translationSelector } from 'app/reducers'
 import { useTranslation } from 'app/hooks'
 import blogCategories from 'data/blog/categories'
@@ -11,16 +12,13 @@ import blogArticles from 'data/blog/articles'
 import Main from 'components/layout/Main'
 import BlogHeading, { BlogHeadingBody, BlogHeadingContent, BlogHeadingSecondary, BlogHeadingTitle } from 'components/ui/BlogHeading'
 import { CardRotate, CardColoredBottom, CardContent, CardHeader, CardHeaderIcon, CardHeaderTitle, CardImage, Cards } from 'components/ui/Card'
-
-// Images
-import backgroundImg from 'assets/images/blog/categories/css-background.jpg'
+import Error404 from 'pages/404'
 
 // Icons
 import NewspaperSvg from 'assets/images/icons/light/newspaper.svg'
 import CalendarStarSvg from 'assets/images/icons/light/calendar-star.svg'
 import GraduationCapSvg from 'assets/images/icons/light/graduation-cap.svg'
-import Link from 'next/link'
-import Error404 from 'pages/404'
+import CompassSvg from 'assets/images/icons/light/compass.svg'
 
 /**
  * Blog page category React
@@ -71,6 +69,7 @@ export default function BlogCategory() {
                                         {article.type === 'news' && <NewspaperSvg className="w-7 h-7 fill-current text-white" />}
                                         {article.type === 'update' && <CalendarStarSvg className="w-7 h-7 fill-current text-white" />}
                                         {article.type === 'tutorial' && <GraduationCapSvg className="w-7 h-7 fill-current text-white" />}
+                                        {article.type === 'discover' && <CompassSvg className="w-7 h-7 fill-current text-white" />}
                                     </CardHeaderIcon>
                                     <CardHeaderTitle title={article.title} secondary={`${__('created-at')} ${formatDate(article.created)}`} />
                                 </CardHeader>

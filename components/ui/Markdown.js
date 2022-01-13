@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import { className } from "app/helpers"
+import MdIcon from './MdIcon'
 
 export default function Markdown(props) {
     const cleanProps = {...props}
@@ -12,7 +13,18 @@ export default function Markdown(props) {
             props.noProse ? '' : 'prose max-w-full prose-neutral dark:prose-invert',
             props.className ?? '',
         ])}>
-            <ReactMarkdown>{props.children}</ReactMarkdown>
+            <ReactMarkdown
+                components={{
+                    em({node, ...props}) {
+                        const match = /icon-(\w+)/.exec(node.children[0].value || '')
+                        return match ? (
+                            <MdIcon icon={match[1]} />
+                        ) : (
+                            <em {...props} />
+                        )
+                    }
+                }}
+            >{props.children}</ReactMarkdown>
         </div>
     )
 }
