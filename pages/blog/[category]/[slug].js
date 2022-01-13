@@ -44,9 +44,9 @@ export default function BlogArticle () {
                         publishedTime: article.created,
                     },
                     images: [{
-                        url: config.siteurl + article.cover.src,
-                        width: 850,
-                        height: 650,
+                        url: config.siteurl + '/images/blog/articles/vue/001-let-s-go-discover-vue.jpg',
+                        width: 1920,
+                        height: 1080,
                         alt: article.title,
                     }]
                 }}
