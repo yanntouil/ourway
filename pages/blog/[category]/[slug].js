@@ -46,7 +46,7 @@ export default function BlogArticle ({ params }) {
                         authors: [config.author.twitter]
                     },
                     images: [{
-                        url: `${config.siteurl}/images/blog/posts/${article.id}/opengraph.jpg`,
+                        url: `${config.siteurl}/images/blog/posts/${article.category}/${article.id}/opengraph.jpg`,
                         width: 1200,
                         height: 630,
                         alt: article.title,
