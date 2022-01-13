@@ -42,6 +42,7 @@ export default function BlogArticle ({params}) {
                         tags: article.tags ? article.tags.join(' ') : '',
                         publishedTime: article.created,
                     },
+                    title: article.title,
                     description: article.description,
                     images: [{
                         url: config.siteurl + article.images.cover,
