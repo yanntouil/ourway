@@ -2,6 +2,7 @@ import{ init as emailJSInit } from '@emailjs/browser'
 
 const config = {
     sitename: 'Ourway',
+    siteurl: 'https://portfolio.ourway.io',
     page: {
         title: 'Ourway',
     },
