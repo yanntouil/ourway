@@ -18,15 +18,14 @@ import config from 'app/config'
 /**
  * Page Blog Article
  */
-export default function BlogArticle () {
+export default function BlogArticle ({params}) {
     /**
      * Page settings
      */
     const dispatch = useDispatch()
     const { currentLanguage } = useSelector(translationSelector)
     const __ = useTranslation('pageBlog')
-    const { query } = useRouter()
-    const article = blogArticles.find(article => article.category === query.category && article.slug === query.slug) ?? false
+    const article = blogArticles.find(article => article.category === params.category && article.slug === params.slug) ?? false
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => dispatch({type: 'layout/setPageTitle', payload: `${__('page-title')} : ${article.title}`}), [currentLanguage])
     // Not found redirection
@@ -44,7 +43,7 @@ export default function BlogArticle () {
                         publishedTime: article.created,
                     },
                     images: [{
-                        url: config.siteurl + '/images/blog/articles/vue/001-let-s-go-discover-vue.jpg',
+                        url: config.siteurl + article.images.cover,
                         width: 1920,
                         height: 1080,
                         alt: article.title,
@@ -74,4 +73,9 @@ export default function BlogArticle () {
             </Main>
         </>
     )
+}
+export function getServerSideProps(context) {
+    return {
+      props: {params: context.params}
+    }
 }

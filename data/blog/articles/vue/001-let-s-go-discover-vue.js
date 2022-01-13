@@ -11,6 +11,9 @@ import banner from 'assets/images/blog/articles/vue/001-let-s-go-discover-vue-ba
     hero: true,
     cover: cover,
     banner: banner,
+    images: {
+        cover: '/images/blog/articles/vue/001-let-s-go-discover-vue.jpg'
+    },
     slug: 'let-s-go-discover-vue',
     type: 'discover',
     category: 'vue',
