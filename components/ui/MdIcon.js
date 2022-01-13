@@ -8,7 +8,6 @@ import SunCloudIcon from 'assets/images/icons/regular/sun-cloud.svg'
 
 
 export default function MdIcon({ icon }) {
-    console.log(icon);
     switch (icon) {
         case 'vue': return (<VueIcon className="inline-flex w-4 h-4 fill-current"/>)
         case 'angular': return (<AngularIcon className="inline-flex w-4 h-4 fill-current"/>)
