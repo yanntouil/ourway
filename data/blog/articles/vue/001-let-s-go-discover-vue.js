@@ -19,7 +19,7 @@ import banner from 'assets/images/blog/articles/vue/001-let-s-go-discover-vue-ba
     category: 'vue',
     created: (new Date(2022, 1, 13)).toISOString(),
     title: "À la découverte de Vue",
-    description: "Partez à la découverte de Vue, On parlera aussi de la réalité du marché et de l'histoire à la création du besoin vous saurez tout sur cette incontournable Framework. ",
+    description: "Partez à la découverte de Vue, On parlera de l'histoire à de la réalité du marché vous saurez tout sur cette incontournable Framework.",
     content: `
 Je m'excuse un peu de la longueur de cet article, l'idée de départ était de parler de l'histoire de vue, mais comment parler 
 d'histoire sans expliquer l'avancement des besoins, les réponses fournies au fil du temps et la réalité du marché. J'ai ajouté 
