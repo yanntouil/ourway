@@ -1,11 +1,8 @@
 /**
  * Article À la découverte de Vue
  */
-import { v4 as uuid } from "uuid"
-import cover from 'assets/images/blog/articles/vue/001-let-s-go-discover-vue.jpg'
-import banner from 'assets/images/blog/articles/vue/001-let-s-go-discover-vue-banner.jpg'
  
- const article = [{
+const article = [{
     id: 'be819ff0-31e5-404d-b261-5f50d8b5aba8',
     name: '',
     hero: true,

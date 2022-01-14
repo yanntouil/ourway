@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { translationSelector } from 'app/reducers'
 import { useTranslation } from 'app/hooks'
 import blogCategories from 'data/blog/categories'
-import blogArticles from 'data/blog/articles'
+import blogPosts from 'data/blog/posts'
 
 // Components
 import Main from 'components/layout/Main'
@@ -33,7 +33,7 @@ export default function BlogCategory({ params }) {
     const __ = useTranslation('pageBlog')
     const categoryFind = blogCategories.find(category => category.name === params.category) ?? false
     const category = {...categoryFind, ...categoryFind[currentLanguage]}
-    const articles = blogArticles.filter(article => article.category === category.name)
+    const posts = blogPosts.filter(post => post.category === category.name)
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => dispatch({type: 'layout/setPageTitle', payload: `${__('page-title')} : ${category.title}`}), [currentLanguage])
 
@@ -66,22 +66,22 @@ export default function BlogCategory({ params }) {
                 </BlogHeading>
             
                 <Cards>
-                    {articles.map(article => (
-                        <CardRotate key={`blog-${category.name}-${article.id}`}>
-                            <Link href={`/blog/${category.name}/${article.slug}`}>
+                    {posts.map(post => (
+                        <CardRotate key={`blog-${category.name}-${post.id}`}>
+                            <Link href={`/blog/${category.name}/${post.slug}`}>
                                 <a className="grow flex flex-col gap-4">
-                                    <CardImage src={article.images.cover} />
+                                    <CardImage src={post.images.cover} />
                                     <CardHeader>
                                         <CardHeaderIcon className={`bg-${category.color}-500`}>
                                             {/* Types icons */}
-                                            {article.type === 'news' && <NewspaperSvg className="w-7 h-7 fill-current text-white" />}
-                                            {article.type === 'update' && <CalendarStarSvg className="w-7 h-7 fill-current text-white" />}
-                                            {article.type === 'tutorial' && <GraduationCapSvg className="w-7 h-7 fill-current text-white" />}
-                                            {article.type === 'discover' && <CompassSvg className="w-7 h-7 fill-current text-white" />}
+                                            {post.type === 'news' && <NewspaperSvg className="w-7 h-7 fill-current text-white" />}
+                                            {post.type === 'update' && <CalendarStarSvg className="w-7 h-7 fill-current text-white" />}
+                                            {post.type === 'tutorial' && <GraduationCapSvg className="w-7 h-7 fill-current text-white" />}
+                                            {post.type === 'discover' && <CompassSvg className="w-7 h-7 fill-current text-white" />}
                                         </CardHeaderIcon>
-                                        <CardHeaderTitle title={article.title} secondary={`${__('created-at')} ${formatDate(article.created)}`} />
+                                        <CardHeaderTitle title={post.title} secondary={`${__('created-at')} ${formatDate(post.created)}`} />
                                     </CardHeader>
-                                    <CardContent>{article.description}</CardContent>
+                                    <CardContent>{post.description}</CardContent>
                                     <CardColoredBottom className={`bg-${category.color}-500`} />
                                 </a>
                             </Link>

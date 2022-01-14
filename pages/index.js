@@ -8,12 +8,11 @@ import { useTranslation } from 'app/hooks'
 import config from 'app/config'
 import projectsList from 'data/projects'
 // Data
-import articles from 'data/blog/articles'
+import blogPosts from 'data/blog/posts'
 // Components
 import Main from 'components/layout/Main'
 import SliderWild from 'components/ui/SliderWild'
 import HomeSlider from 'components/ui/HomeSlider'
-import AnimatedBubble from 'components/ui/AnimatedBubble'
 import Section, { SectionSecondary, SectionTitle } from 'components/ui/Section'
 import { BoxBullet, BoxBulletBody, BoxBulletContent, BoxBulletIcon, BoxBulletTitle } from 'components/ui/BoxBullet'
 import Markdown from 'components/ui/Markdown'
@@ -49,11 +48,11 @@ export default function Home() {
     )
 
     /** @state articles Hero */
-    const [ articlesHero ] = useState(articles
-        .filter(article => article.hero)
+    const [ blogPostsHero ] = useState(blogPosts
+        .filter(post => post.hero)
         .sort((a, b) => (new Date(b.created)) - (new Date(a.created)))
         .slice(0, 5)
-        .map((article) => ({ ...article, ...article[currentLanguage]}))
+        .map((post) => ({ ...post, ...post[currentLanguage]}))
     )
 
     /**
@@ -78,7 +77,7 @@ export default function Home() {
                 {/* Main Slider */}
                 <Section className="relative h-screen" id="news">
                     <h2 className="absolute z-1 pl-8 lg:pl-16 pt-4 text-4xl md:text-6xl lg:text-8xl font-black tracking-wide uppercase text-center text-stroke text-stroke-secondary-800 text-secondary-800/50 dark:text-stroke-white dark:text-white/50">{__('news')}</h2>
-                    <SliderWild slides={articlesHero} />
+                    <SliderWild slides={blogPostsHero} />
                 </Section>
 
                 {/* Welcome + About me */}

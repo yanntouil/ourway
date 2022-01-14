@@ -17,7 +17,7 @@ import VueSvg from 'assets/images/icons/brands/vuejs.svg'
 import AngleDoubleLeftSvg from 'assets/images/icons/light/angle-double-left.svg'
 import AngleDoubleRightSvg from 'assets/images/icons/light/angle-double-right.svg'
 import { SectionSecondary, SectionTitle } from 'components/ui/Section'
-import * as articles from 'data/blog/articles'
+import * as blog from 'data/blog/posts'
 import categoriesList from 'data/blog/categories'
 
 
@@ -94,7 +94,7 @@ export default function Index() {
                                 </CardFloatingButton>
                             </Card3DFront>
                             <Card3DBack className={`p-4 bg-${category.color}-600 dark:bg-${category.color}-800 text-white`} noBgColor>
-                                <BlogLastArticles articles={articles[`lastest${ucFirst(camalize(category.name))}`]} />
+                                <BlogLastPosts posts={blog[`lastest${ucFirst(camalize(category.name))}`]} />
                                 <CardFloatingButton className="top-4 right-4" onClick={() => setCategoryOpened('')}>
                                     <AngleDoubleRightSvg className="w-8 h-8 fill-current" />
                                 </CardFloatingButton>
@@ -110,7 +110,7 @@ export default function Index() {
 }
 
 
-export function BlogLastArticles({ articles, className }) {
+export function BlogLastPosts({ posts, className }) {
     /**
      * Hooks
      */
@@ -120,12 +120,12 @@ export function BlogLastArticles({ articles, className }) {
         <div className={`grow flex flex-col justify-center gap-2 font-gochi-hand ${className}`}>
             <h4 className="text-3xl font-medium leading-normal text-center">{__('last-articles')}</h4>
             <ul className="flex flex-col py-2 gap-2">
-                {articles.map((article) => (
+                {posts.map((post) => (
                     <li className="" key={uuid()}>
-                        <Link href={`/blog/${article.category}/${article.slug}`}>
+                        <Link href={`/blog/${post.category}/${post.slug}`}>
                             <a className="flex justify-between gap-4 text-lg">
-                                <div className="text-ellipsis">{article.title}</div>
-                                <div>{(new Date(article.created)).toLocaleDateString(currentLocale)}</div>
+                                <div className="text-ellipsis">{post.title}</div>
+                                <div>{(new Date(post.created)).toLocaleDateString(currentLocale)}</div>
                             </a>
                         </Link>
                     </li>
