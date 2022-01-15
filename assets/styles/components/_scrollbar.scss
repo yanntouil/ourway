@@ -1,0 +1,77 @@
+
+
+$scrollbar-width: 0.75rem;
+
+
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: $secondary-800 $secondary-600;
+    &::-webkit-scrollbar {
+        width: $scrollbar-width;
+        height: $scrollbar-width;
+    }
+    &::-webkit-scrollbar-track {
+        background: $secondary-50;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $scrollbar-width;
+        border: 1px solid $secondary-200;
+        background: $secondary-600;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        border-radius: $scrollbar-width;
+        border-width: 1px;
+        background: $secondary-800;
+    }
+}
+
+body.dark .scrollbar {
+    &::-webkit-scrollbar-track {
+        background: $secondary-900;
+    }
+    &::-webkit-scrollbar-thumb {
+        border: 1px solid $secondary-900;
+        background: $secondary-700;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        border-width: 1px;
+        background: $secondary-500;
+    }
+}
+
+$scrollbar-thin-width: 0.5rem;
+.scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: $secondary-800 $secondary-600;
+    &::-webkit-scrollbar {
+        width: $scrollbar-thin-width;
+        height: $scrollbar-thin-width;
+    }
+    &::-webkit-scrollbar-track {
+        background: $secondary-50;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: $scrollbar-thin-width;
+        border: 1px solid $secondary-200;
+        background: $secondary-600;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        border-radius: $scrollbar-thin-width;
+        border-width: 1px;
+        background: $secondary-800;
+    }
+}
+
+body.dark .scrollbar-thin {
+    &::-webkit-scrollbar-track {
+        background: $secondary-900;
+    }
+    &::-webkit-scrollbar-thumb {
+        border: 1px solid $secondary-900;
+        background: $secondary-700;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        border-width: 1px;
+        background: $secondary-500;
+    }
+}

@@ -13,7 +13,7 @@
     slug: 'svg-stroke-animation',
     type: 'discover',
     category: 'css',
-    created: (new Date(2022, 1, 13)).toISOString(),
+    created: (new Date(2022, 0, 13)).toISOString(),
     title: "SVG stroke animation",
     description: "D'une banale propriété à une fabuleuse animation. Apprenons à animer une bordure SVG, cette méthode est applicable aussi bien sur un texte qu'une image.",
     content: `

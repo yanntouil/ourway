@@ -13,7 +13,7 @@ const article = [{
     slug: 'l-agilite-c-est-quoi',
     type: 'discover',
     category: 'project-management',
-    created: (new Date(2022, 1, 14)).toISOString(),
+    created: (new Date(2022, 0, 14)).toISOString(),
     title: "L'agilité c'est quoi?",
     description: "Petite synthèse de ma formation sur la gestion de projet agile",
     content: `

@@ -13,7 +13,7 @@ const article = [{
     slug: 'let-s-go-discover-vue',
     type: 'discover',
     category: 'vue',
-    created: (new Date(2022, 1, 13)).toISOString(),
+    created: (new Date(2022, 0, 13)).toISOString(),
     title: "À la découverte de Vue",
     description: "Partez à la découverte de Vue, On parlera de l'histoire à de la réalité du marché vous saurez tout sur cette incontournable Framework.",
     content: `
