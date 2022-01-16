@@ -8,7 +8,9 @@ const post = [{
     hero: true,
     images: {
         cover: '/images/blog/posts/react/77ee8435-6aa8-4bdc-9764-dcbf8180177c/cover.jpg',
+        mobile: '/images/blog/posts/react/77ee8435-6aa8-4bdc-9764-dcbf8180177c/mobile.jpg',
         banner: '/images/blog/posts/react/77ee8435-6aa8-4bdc-9764-dcbf8180177c/banner.jpg',
+        opengraph: '/images/blog/posts/react/77ee8435-6aa8-4bdc-9764-dcbf8180177c/opengraph.jpg',
     },
     slug: 'les-methodes-de-array',
     type: 'tutorial',

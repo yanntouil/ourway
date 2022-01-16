@@ -35,7 +35,7 @@
   */
  export const handleDragEnd = (info, wrapperWidth, index, count, goTo) => {
      const velocityRatio = 0.4
-     const swipeConfidenceThreshold = wrapperWidth / 5
+     const swipeConfidenceThreshold = wrapperWidth / 3//
      const offset = info.offset.x * velocityRatio
      const correctedVelocity = info.velocity.x * velocityRatio
      const direction = correctedVelocity < 0 || offset < 0 ? 1 : -1

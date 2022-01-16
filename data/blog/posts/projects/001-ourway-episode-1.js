@@ -8,14 +8,16 @@ const post = [{
     hero: true,
     images: {
         cover: '/images/blog/posts/projects/az769hha-31e5-195d-b298-5f43d8b5aba8/cover.jpg',
+        mobile: '/images/blog/posts/projects/az769hha-31e5-195d-b298-5f43d8b5aba8/mobile.jpg',
         banner: '/images/blog/posts/projects/az769hha-31e5-195d-b298-5f43d8b5aba8/banner.jpg',
+        opengraph: '/images/blog/posts/projects/az769hha-31e5-195d-b298-5f43d8b5aba8/opengraph.jpg',
     },
     slug: 'ourway-episode-1',
     type: 'discover',
     category: 'projects',
     created: (new Date(2022, 0, 16)).toISOString(),
     title: "Ourway - Épisode 1",
-    description: "Vous voulez tout savoir sur le projet Ourway ? Et bien commençons par l'étape 1, la création et la mise en place du site.",
+    description: "Vous voulez tout savoir sur le projet Ourway ? Et bien commençons par l'épisode 1, la création et la mise en place du site.",
     content: `
 Le projet **Ourway** est né suite à ma **formation de développeur frontend** alias développeur d'applications - JavaScript React (la formation 
 a été renommée sur la fin). Une chose était sûre trouver un job sans **Portfolio** n'allait pas être une mince à faire, il me fallait un support

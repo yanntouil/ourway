@@ -4,13 +4,15 @@
  
 const post = [{
     id: 'be819ff0-31e5-404d-b261-5f50d8b5aba8',
-    name: '',
+    name: 'aLaDecouverteDeVue',
     hero: true,
     images: {
         cover: '/images/blog/posts/vue/be819ff0-31e5-404d-b261-5f50d8b5aba8/cover.jpg',
+        mobile: '/images/blog/posts/vue/be819ff0-31e5-404d-b261-5f50d8b5aba8/mobile.jpg',
         banner: '/images/blog/posts/vue/be819ff0-31e5-404d-b261-5f50d8b5aba8/banner.jpg',
+        opengraph: '/images/blog/posts/vue/be819ff0-31e5-404d-b261-5f50d8b5aba8/opengraph.jpg',
     },
-    slug: 'let-s-go-discover-vue',
+    slug: 'a-la-decouverte-de-vue',
     type: 'discover',
     category: 'vue',
     created: (new Date(2022, 0, 13)).toISOString(),

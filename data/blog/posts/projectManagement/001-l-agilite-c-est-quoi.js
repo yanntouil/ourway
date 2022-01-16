@@ -8,7 +8,9 @@ const post = [{
     hero: true,
     images: {
         cover: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/cover.jpg',
+        mobile: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/mobile.jpg',
         banner: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/banner.jpg',
+        opengraph: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/opengraph.jpg',
     },
     slug: 'l-agilite-c-est-quoi',
     type: 'discover',
@@ -17,7 +19,6 @@ const post = [{
     title: "L'agilité c'est quoi ?",
     description: "Petite synthèse de ma formation sur la gestion de projet agile",
     content: `
-
 Le manifeste Agile est né aux US en 2001 suite à une proposition de changement de l'approche utiliser dans la conduite de projet dans l'IT. Le développement séquentiel ne correspond pas toujours aux contraintes et aux exigences actuelles en constante évolution.   
 Le manifeste s'appuis sur 4 valeurs:
 

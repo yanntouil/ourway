@@ -5,6 +5,6 @@
 import svgStrokeAnimation from './001-svg-stroke-animation'
 
 const posts = [
-    ...svgStrokeAnimation, 
+    // ...svgStrokeAnimation, 
 ]
 export default posts

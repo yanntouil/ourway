@@ -2,9 +2,9 @@
  * Blog category vue
  */
 
-import letSGoDiscoverVue from './001-let-s-go-discover-vue'
+import aLaDecouverteDeVue from './001-a-la-decouverte-de-vue'
 
 const posts = [
-    ...letSGoDiscoverVue,
+    ...aLaDecouverteDeVue,
 ]
 export default posts

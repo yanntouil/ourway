@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence, useMotionValue, useTransform, useAnimation } from 'framer-motion'
 import { className } from 'app/helpers'
-import { useTranslation, useWindowSize } from 'app/hooks'
+import { useResponsive, useTranslation, useWindowSize } from 'app/hooks'
 import Link from 'next/link'
 // Icons
 import AngleRightIcon from 'assets/images/icons/light/angle-right.svg'
@@ -21,6 +21,7 @@ export default function SliderWild({ slides, sliderTiming = 10 }) {
     const trackRef = useRef(null)
     const controls = useAnimation()
     const __ = useTranslation('layout')
+    const media = useResponsive()
 
     /**
      * Move track to an index
@@ -137,7 +138,7 @@ export default function SliderWild({ slides, sliderTiming = 10 }) {
                         {/* Slide image */}
                         <div className="relative lg:col-start-4 lg:col-span-9 h-full">
                             {(slide.images && slide.images.cover) && <Image 
-                                src={slide.images.cover} 
+                                src={media.max('md') ? slide.images.mobile : slide.images.cover} 
                                 layout="fill"
                                 objectFit="cover"
                                 priority={true}
