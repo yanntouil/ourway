@@ -11,6 +11,7 @@ import lorem7 from './lorem7'
 import lorem8 from './lorem8'
 
 import lesModulesEnJavascript from './001-les-modules-en-javascript'
+import lesMethodesDeArray from './002-les-methodes-de-array'
 
 
 
@@ -18,7 +19,7 @@ import lesModulesEnJavascript from './001-les-modules-en-javascript'
 
 const articles = [
     //...lorem1, ...lorem2, ...lorem3, ...lorem4, ...lorem5, ...lorem6, ...lorem7, ...lorem8,
-    ...lesModulesEnJavascript, 
+    ...lesModulesEnJavascript, ...lesMethodesDeArray, 
 ]
 export default articles
 
