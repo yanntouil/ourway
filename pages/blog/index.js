@@ -1,34 +1,34 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Link from 'next/link'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo'
 import { v4 as uuid } from "uuid"
 import { translationSelector } from 'app/reducers'
 import { useTranslation } from 'app/hooks'
 import config from 'app/config'
-
-// Components
-import Main from 'components/layout/Main'
-import Card3D, { Card3DBack, Card3DFront } from 'components/ui/Card3D'
-import { CardHeader, CardHeaderIcon, CardHeaderTitle, CardImage, CardContent, CardColoredBottom, CardFloatingButton, Cards } from 'components/ui/Card'
-
-// Images
-import VueSvg from 'assets/images/icons/brands/vuejs.svg'
-import AngleDoubleLeftSvg from 'assets/images/icons/light/angle-double-left.svg'
-import AngleDoubleRightSvg from 'assets/images/icons/light/angle-double-right.svg'
-import { SectionSecondary, SectionTitle } from 'components/ui/Section'
+import { className, ucFirst } from 'app/helpers'
+import camalize from 'app/helpers/camalize'
 import * as blog from 'data/blog/posts'
 import categoriesList from 'data/blog/categories'
 
+// Components
+import Main from 'components/layout/Main'
+import { SectionSecondary, SectionTitle } from 'components/ui/Section'
+import Card3D, { Card3DBack, Card3DFront } from 'components/ui/Card3D'
+import { CardHeader, CardHeaderIcon, CardHeaderTitle, CardImage, CardContent, CardColoredBottom, CardFloatingButton, Cards } from 'components/ui/Card'
+
+// Icons
+import AngleDoubleLeftSvg from 'assets/images/icons/light/angle-double-left.svg'
+import AngleDoubleRightSvg from 'assets/images/icons/light/angle-double-right.svg'
+import VueSvg from 'assets/images/icons/brands/vuejs.svg'
 
 // Images
 import HeadingSvg from 'assets/images/blog/heading.svg'
-import { className, ucFirst } from 'app/helpers'
-import camalize from 'app/helpers/camalize'
 
 
 /**
- * Blog category page
+ * Blog categories page
  */
 export default function Index() {
     /**
@@ -81,7 +81,7 @@ export default function Index() {
                                         <CardImage src={category.images.cover} />
                                         <CardHeader>
                                             <CardHeaderIcon className={`text-white bg-${category.color}-500`}>
-                                                <VueSvg className="w-7 h-7 mt-0.5 -mb-0.5 fill-current" />
+                                                <Image src={category.images.icon} width={40} height={40} alt={category.title} />
                                             </CardHeaderIcon>
                                             <CardHeaderTitle title={category.title} secondary={category.secondary} />
                                         </CardHeader>

@@ -9,7 +9,8 @@ const category = [{
     color: 'lime',
     images: {
         cover: '/images/blog/categories/projects/cover.jpg',
-        background: '/images/blog/categories/projects/background.jpg'
+        background: '/images/blog/categories/projects/background.jpg',
+        icon: '/images/blog/categories/projects/icon.png',
     },
     fr: {
         title: "Mes projets",

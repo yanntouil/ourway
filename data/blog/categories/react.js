@@ -9,7 +9,8 @@ const category = [{
     color: 'sky',
     images: {
         cover: '/images/blog/categories/react/cover.jpg',
-        background: '/images/blog/categories/react/background.jpg'
+        background: '/images/blog/categories/react/background.jpg',
+        icon: '/images/blog/categories/react/icon.png',
     },
     fr: {
         title: "React",

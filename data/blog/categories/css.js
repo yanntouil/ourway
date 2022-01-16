@@ -2,14 +2,15 @@
  * Category 5 CSS & Animation
  */
 
- 
+
 const category = [{
     id: 5,
     name: "css",
     color: 'rose',
     images: {
         cover: '/images/blog/categories/css/cover.jpg',
-        background: '/images/blog/categories/css/background.jpg'
+        background: '/images/blog/categories/css/background.jpg',
+        icon: '/images/blog/categories/css/icon.png',
     },
     fr: {
         title: "CSS & Animation",

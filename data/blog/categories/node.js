@@ -9,7 +9,8 @@ const category = [{
     color: 'green',
     images: {
         cover: '/images/blog/categories/node/cover.jpg',
-        background: '/images/blog/categories/node/background.jpg'
+        background: '/images/blog/categories/node/background.jpg',
+        icon: '/images/blog/categories/node/icon.png',
     },
     fr: {
         title: "Node",

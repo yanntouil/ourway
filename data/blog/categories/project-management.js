@@ -9,7 +9,8 @@ const category = [{
     color: 'indigo',
     images: {
         cover: '/images/blog/categories/project-management/cover.jpg',
-        background: '/images/blog/categories/project-management/background.jpg'
+        background: '/images/blog/categories/project-management/background.jpg',
+        icon: '/images/blog/categories/project-management/icon.png',
     },
     fr: {
         title: "Gestion de projet",
