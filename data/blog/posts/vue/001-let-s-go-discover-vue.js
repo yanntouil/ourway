@@ -1,8 +1,8 @@
 /**
- * Article À la découverte de Vue
+ * Post : À la découverte de Vue
  */
  
-const article = [{
+const post = [{
     id: 'be819ff0-31e5-404d-b261-5f50d8b5aba8',
     name: '',
     hero: true,
@@ -230,4 +230,4 @@ informations utiles à des tiers.
 `,
  }]
  
- export default article
+ export default post

@@ -5,12 +5,12 @@ import Section from 'components/ui/Section';
 export default function test() {
 
 
-// const result = 
-let string = 'ma chaine'
-const [ first, ...rest ] = string
-string = first.toLocaleUpperCase() + rest.join('')
-    console.log(string)
-
+    // const result = 
+    if (typeof window !== "undefined") {
+        let NodeList = document.querySelectorAll('p')
+        const elements =  Array.from(NodeList).map((el) => el)
+        console.log(elements)
+    }
     return (
         <Main>
             <Section></Section>

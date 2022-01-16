@@ -1,11 +1,11 @@
 /**
- * Article Les methodes de Array
+ * Post : Les methodes de Array
  */
 
-const article = [{
+const post = [{
     id: '77ee8435-6aa8-4bdc-9764-dcbf8180177c',
     name: 'lesMethodesDeArray',
-    hero: false,
+    hero: true,
     images: {
         cover: '/images/blog/posts/react/77ee8435-6aa8-4bdc-9764-dcbf8180177c/cover.jpg',
         banner: '/images/blog/posts/react/77ee8435-6aa8-4bdc-9764-dcbf8180177c/banner.jpg',
@@ -17,14 +17,14 @@ const article = [{
     title: "Les méthodes de Array",
     description: "Connaitre tout enfin presque sur l'objet Array, ses méthodes et aller un peu plus loin avec des cas d'usages concrets.",
     content: `
-Les bonnes pratiques concernant l'usage des Array en Javascript est indispensable. Les Array nous simplifient la vie et rendent 
+Les bonnes pratiques concernant l'usage des tableau en Javascript est indispensable. Les tableau nous simplifient la vie et rendent 
 l'usage des boucles presque useless.   
 Je vais essayer au travers de ce cours de vous montrer un maximum de cas d'usage utiles dans votre quotidien, ne vous inquiétez 
 pas certains usages seront un peu exotique mais très pratique à utiliser avec des Frameworks.
     
-## Différentes manières de créer un Array
+## Différentes manières de créer un tableau
 
-### Création d'un Array
+### Création d'un tableau
 
 ~~~js
 // Création d'un tableau de string
@@ -48,34 +48,39 @@ const films = [
         releaseDate: 2011,
     }
 ]
+
+// Création d'un tableau a partir d'une nodeList
+let NodeList = document.querySelectorAll('p')
+const elements =  Array.from(NodeList)
+
 ~~~
 
 ### Techniques avancées, voir exotiques
 
-Voila quelques techniques supplémentaire pour créer un Array, nous verons un peu plutard comment et dans quel cas on pourra s'en servir.
+Voila quelques techniques supplémentaires pour créer un tableau, nous verons un peu plutard comment et dans quel cas on pourra s'en servir.
 
 ~~~js
-// Créer un Array de caractères à partir d'une string
+// Créer un tableau de caractères à partir d'une chaine
 const string = 'ma chaine'
 const array = [...string]// ['m', 'a', ' ', 'c', 'h', 'a', 'i', 'n', 'e']
 
-// Créer un Array à partir d'un objet
+// Créer un tableau à partir d'un objet
 const object =     {
     name: 'Thor',
     producer: 'Kenneth Branagh',
     releaseDate: 2011,
 }
 
-// Array avec les valeurs
+// tableau avec les valeurs de l'objet
 const array = Object.values(object)// ['Thor', 'Kenneth Branagh', 2011]
 
-// Array avec les clés
+// tableau avec les clés de l'objet
 const array = Object.keys(object)// ['name', 'producer', 'releaseDate']
 
-// Array avec les paires clés, valeurs
+// tableau avec les paires clés, valeurs de l'objet
 const array = Object.entries(object)// [['name', 'Thor'], ['producer', 'Kenneth Branagh'], ['releaseDate', 2011]]
 
-// Créer un Array de n éléments
+// Créer un tableau de n éléments
 const array = [...Array(5).keys()]// [0, 1, 2, 3, 4]
 ~~~
 
@@ -135,19 +140,19 @@ colors.splice(colors.indexOf('vert'), 1)// 'vert'
 Particulièrement utile quand on manipule de grandes quantités de données, les méthodes de trie sont indispensables.
 
 ~~~js
-// Retourne un Array en inversant les clés
+// Retourne un tableau en inversant les clés
 const chiffres = ["un", "deux", "trois"]
 chiffres.reverse()// ["trois", "deux", "un"]
 
-// Retourne un Array trier par ordre alphabétique
+// Retourne un tableau trier par ordre alphabétique
 const pays = ["Allemagne", "France", "Italie", "Espagne", "Portugal"]
 pays.sort()// ['Allemagne', 'Espagne', 'France', 'Italie', 'Portugal']
 pays.sort((a, b) => a - b)// ['Allemagne', 'Espagne', 'France', 'Italie', 'Portugal']
 
-// Retourne un Array trier par ordre alphabétique inversé
+// Retourne un tableau trier par ordre alphabétique inversé
 pays.sort((a, b) => b - a)// ['Allemagne', 'France', 'Italie', 'Espagne', 'Portugal']
 
-// Classement avec des dates
+// Trie avec des dates
 const dates = ['2020-02-29', '2021-12-17', '2022-01-15']
 dates.sort((a, b) => new Date(a) - new Date(b))// ['2020-02-29', '2021-12-17', '2022-01-15']
 
@@ -241,11 +246,11 @@ films.filter(
 
 ### Opérations avec reduce
 
-Cette méthode permet de réduire tous les éléments d'un Array à une seule valeur. Particulièrement utiles pour faire des calculs 
-dans un Array. Je m'en sers très peu mais c'est toujours bien de savoir qu'elle existe. 
+Cette méthode permet de réduire tous les éléments d'un tableau à une seule valeur. Particulièrement utiles pour faire des calculs 
+dans un tableau. Je m'en sers très peu mais c'est toujours bien de savoir qu'elle existe. 
 
 ~~~js
-// Un nouveau Array avec des likes
+// Un nouveau tableau avec des likes
 const photos = [
     {
         name: 'Glace en formation',
@@ -278,8 +283,8 @@ const result = photos.reduce(
 
 ### Transformations avec map
 
-Cette méthode permet de créer un nouvel Array en manipulant les valeurs d'un Array. Certainement la méthode la plus utilisée 
-par les développeurs React, elle nous permet d'itérer sur Array et d'en sortir du JSX.
+Cette méthode permet de créer un nouveau tableau en manipulant les valeurs d'un tableau existant. Certainement la méthode la plus utilisée 
+par les développeurs React, elle nous permet d'itérer sur tableau et d'en sortir du JSX.
 
 ~~~js
 // Reprenons nos films
@@ -302,7 +307,7 @@ const films = [
 ]
 
 // Je veux la liste de nom de films séparé par une virgule
-films.map(film => film.name).join(', ')// Iron Man,Iron Man 2,Thor
+films.map(film => film.name).join(', ')// Iron Man, Iron Man 2, Thor
 
 // Je veux ajouter le studio Disney à tous les films
 films.map(film => ({...film, studio: 'Disney'}))// Version destructuring
@@ -329,7 +334,7 @@ const result = [...Array(5)].map(i => ({
 
 ### Destructuring et spread
 
-Dernier point important de ce cours sur les Array, le destructuring et l'opérateur spread
+Dernier point important de ce cours sur les tableaux, le destructuring et l'opérateur spread
 
 ~~~js
 // Prenons un array
@@ -366,11 +371,7 @@ Une bonne connaissance de l'objet Array et de ses méthodes est réellement indi
 node ou fullstack JS. J'ai essayé au travers de ce cours de vous partager les choses les plus importantes mais il n'est pas exhaustif.
 il vous restera encore beaucoup de choses à apprendre, mais ces bases auront l'avantage de vous permettre de le faire seul.
 Comme d'habitude si vous avez besoin de complément d'information, je reste à votre disposition sur Discord, par mail, ...
-`,
- 
- 
- 
- 
+    `,
 }]
 
-export default article
+export default post

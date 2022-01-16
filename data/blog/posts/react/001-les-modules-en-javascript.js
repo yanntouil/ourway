@@ -1,11 +1,11 @@
 /**
- * Article Les modules en Javascript
+ * Post : Les modules en Javascript
  */
-import { v4 as uuid } from "uuid"
-const article = [{
+
+const post = [{
     id: '3024493-e654-455c-bfb7-1f517272c0b9',
     name: 'lesModulesEnJavascript',
-    hero: false,
+    hero: true,
     images: {
         cover: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/cover.jpg',
         banner: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/banner.jpg',
@@ -13,7 +13,7 @@ const article = [{
     slug: 'les-modules-en-javascript',
     type: 'tutorial',
     category: 'react',
-    created: (new Date(2022, 0, 16)).toISOString(),
+    created: (new Date(2022, 0, 15)).toISOString(),
     title: "Les modules en Javascript",
     description: "Les notions de module paraissent souvent difficiles quand on se lance en JS, essayons de clarifier un peu tout ça.",
     content: `
@@ -274,4 +274,4 @@ qui j'espère pourra vous apprendre de nouvelles choses.
 
 }]
   
-export default article
+export default post

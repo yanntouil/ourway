@@ -1,8 +1,8 @@
 /**
- * Article L'agilité c'est quoi?
+ * Post : L'agilité c'est quoi ?
  */
   
-const article = [{
+const post = [{
     id: "44176d19-87d8-42d1-9106-6b663ddfb31e",
     name: '',
     hero: true,
@@ -14,7 +14,7 @@ const article = [{
     type: 'discover',
     category: 'project-management',
     created: (new Date(2022, 0, 14)).toISOString(),
-    title: "L'agilité c'est quoi?",
+    title: "L'agilité c'est quoi ?",
     description: "Petite synthèse de ma formation sur la gestion de projet agile",
     content: `
 
@@ -107,4 +107,4 @@ En gros SCRUM est un cadre de travail permettant de répondre à des problèmes 
     `,
 }]
   
-export default article
+export default post

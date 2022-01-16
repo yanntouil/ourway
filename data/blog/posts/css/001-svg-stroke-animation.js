@@ -1,8 +1,8 @@
 /**
- * Article SVG Stroke animation
+ * Post : SVG Stroke animation
  */
   
- const article = [{
+ const post = [{
     id: 'az7wpg38-31e5-9g6o-1d36-r78rd8e9rty63',
     name: '',
     hero: true,
@@ -22,4 +22,4 @@ Cette article est en cours de rédaction
 `,
 }]
   
-export default article
+export default post
