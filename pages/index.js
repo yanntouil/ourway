@@ -44,6 +44,7 @@ export default function Home() {
     const [ projects ] = useState(projectsList
         .filter(project => project.homepage)
         .map((project) => ({...project, ...project[currentLanguage]}))
+        .sort((a, b) => (new Date(b.created)) - (new Date(a.created)))
         .slice(0, 5)
     )
 
