@@ -334,6 +334,63 @@ const result = [...Array(5)].map(i => ({
 }))
 ~~~
 
+### Manipulation recursive sur des tableaux en imbriqués
+
+Il arrive souvent quand on travail avec des api d'avoir des données imbriqués les une dans les autres. On appelle cela des nested data.
+
+~~~js
+// Prenons un jeu de données en imbriqué avec des catégories
+const categories = [
+    { id: 1, name: 'Category 1', selected: false, children: [
+        { id: 2, parentId: 1, name: 'Category 1.1', selected: false, children: [
+            { id: 3, parentId: 2, name: 'Category 1.1.1', selected: false },
+            { id: 4, parentId: 2, name: 'Category 1.1.2', selected: false },
+        ]}, 
+        { id: 5, parentId: 1, name: 'Category 1.2', selected: false, children: [
+            { id: 6, parentId: 5, name: 'Category 1.2.1', selected: false },
+            { id: 7, parentId: 5, name: 'Category 1.2.2', selected: false },
+            { id: 8, parentId: 5, name: 'Category 1.2.3', selected: false },
+        ]},
+    ]},
+    { id: 9, name: 'Category 2', selected: false, children: [
+        { id: 10, parentId: 9, name: 'Category 2.1', selected: false, children: [
+            { id: 11, parentId: 10, name: 'Category 2.1.1', selected: false },
+            { id: 12, parentId: 10, name: 'Category 2.1.2', selected: true },
+        ]}, 
+        { id: 13, name: 'Category 2.2', selected: false, children: [
+            { id: 14, parentId: 13, name: 'Category 2.2.1', selected: false },
+            { id: 15, parentId: 13, name: 'Category 2.2.2', selected: false },
+            { id: 16, parentId: 13, name: 'Category 2.2.3', selected: false },
+        ]},
+    ]},
+]
+
+// Nous cherchons pour un select quel l'élément de premier niveau à afficher
+let open = categories.find(function f(category) {// On cherche
+    if (category.selected === true) {
+        return true
+    } else if (category.children && category.children.length) {
+        return category.children.find(f)
+    } else {
+        return false
+    }
+})
+
+// Nous souhaitons mettre le tableau à plat pour simplifier l'usage
+const flatArray = []
+categories.forEach(function f(category) {
+    flatArray.push(category)
+    if (category.children && category.children.length) category.children.forEach(f, null)
+})
+
+// Nous souhaitons mettre le tableau à plat dans un objet ordonné par id
+const flatObject = {}
+categories.forEach(function f(category) {
+    flatObject[category.id] = category
+    if (category.children && category.children.length) category.children.forEach(f, null)
+})
+~~~
+
 ### Destructuring et spread
 
 Dernier point important de ce cours sur les tableaux, le destructuring et l'opérateur spread
