@@ -45,12 +45,12 @@ export default maFonction
 // Exporter une class
 export default class {}
 
-// Exporter une constante objet, array, string, number
+// Exporter une constante de type objet, array, string, number
 const monModule = []
 export default monModule
 
 // Exporter une variable de type objet, array, string, number
-const monModule = []
+let monModule = []
 export default monModule
 ~~~
 

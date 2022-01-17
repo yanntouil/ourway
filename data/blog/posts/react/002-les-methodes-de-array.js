@@ -414,11 +414,11 @@ const array4 = [0, ...array1, 6]// [0, 1, 2, 3, 4, 5, 6]
 const { length } = array4// length = 7
 
 // Une partie d'un tableau
-const { key0, key1, key2 } = array4// key0 = 0, key1 = 1, key2 = 2
+const [ key0, key1, key2 ] = array4// key0 = 0, key1 = 1, key2 = 2
 
 // Et bien d'autres choses en mélangeant ces 2 techniques, comme mon helper ucFirst que j'utilise souvent
 let string = 'ma chaine'
-const [ first, ...rest ] = string// first = 'm', rest = 'a chaine'
+const [ first, ...rest ] = string// first = 'm', rest = ['a', ' ', 'c', 'h', 'a', 'i', 'n', 'e']
 string = first.toLocaleUpperCase() + rest.join('')// 'Ma chaine'
 
 // Sous forme de fonction fléchée ça donne
