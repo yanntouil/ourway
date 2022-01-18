@@ -6,6 +6,7 @@ const translation = {
         'secondary': "Petit tour d'horizon de mes passions orientées sur le design, la gestion de projets et le développement web. Mon blog est encore très nouveau alors soyez indulgent sur le contenu, Ourway ne s'est pas fait en un jour ❤️.",
         'categories': "Catégories",
         'last-articles': "Les derniers articles",
+        'no-article': "Aucun article n'a encore été posté ici",
         'created-at': "Publier le ",
     },
     en: {
@@ -15,6 +16,7 @@ const translation = {
         'categories': "Categories",
         'last-articles': "Lastest articles",
         'created-at': "Publish at ",
+        'no-article': "No article has been posted here yet",
     },
 }
 export default translation

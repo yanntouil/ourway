@@ -109,7 +109,12 @@ export default function Index() {
     )
 }
 
-
+/**
+ * BlogLastPosts
+ * @param {Object} props
+ * @param {Array} props.posts
+ * @param {String} props.className
+ */
 export function BlogLastPosts({ posts, className }) {
     /**
      * Hooks
@@ -119,18 +124,22 @@ export function BlogLastPosts({ posts, className }) {
     return (
         <div className={`grow flex flex-col justify-center gap-2 font-gochi-hand ${className}`}>
             <h4 className="text-3xl font-medium leading-normal text-center">{__('last-articles')}</h4>
-            <ul className="flex flex-col py-2 gap-2">
-                {posts.map((post) => (
-                    <li className="" key={uuid()}>
-                        <Link href={`/blog/${post.category}/${post.slug}`}>
-                            <a className="flex justify-between gap-4 text-lg">
-                                <div className="text-ellipsis">{post.title}</div>
-                                <div>{(new Date(post.created)).toLocaleDateString(currentLocale)}</div>
-                            </a>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
+            {posts.length > 0 ? (
+                <ul className="flex flex-col py-2 gap-2">
+                    {posts.map((post) => (
+                        <li className="" key={uuid()}>
+                            <Link href={`/blog/${post.category}/${post.slug}`}>
+                                <a className="flex justify-between gap-4 text-lg">
+                                    <div className="text-ellipsis">{post.title}</div>
+                                    <div>{(new Date(post.created)).toLocaleDateString(currentLocale)}</div>
+                                </a>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p className="text-center text-lg">{__('no-article')}</p>
+            )} 
         </div>
     )
 }
