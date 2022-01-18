@@ -64,7 +64,7 @@ const translation = {
             'cookies': "Manage cookies",
         },
         blog: {
-            'go-to-article' : "Go to article"
+            'go-to-article' : "Read more"
         }
     },
 }

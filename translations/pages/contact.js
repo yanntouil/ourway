@@ -1,3 +1,7 @@
+/**
+ * Translation : Contact
+ */
+
 const translation = {
     fr: {
         'page-title': "Contact",

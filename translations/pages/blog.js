@@ -1,3 +1,7 @@
+/**
+ * Translation : Blog (categories, category, post)
+ */
+
 const translation = {
     fr: {
         'page-title': "Blog",

@@ -25,7 +25,7 @@
     },
     en: {
         title: "Carwash Flyer",
-        description: "Voilà mon premier flyer crée sous InDesign à la suite de ma formation été 2021. Au programme création de logo sous Illustrator, détourage et compensation des ombres sur Photoshop et bien sûr mise en page sur InDesign.",
+        description: "Here is my first flyer created with InDesign following my summer 2021 training. I created my logo in Illustrator, cropped and compensated shadows in Photoshop and of course I used InDesign for the layout.",
         applications: ['InDesign', 'Photoshop', 'Illustrator'],
         // links: [
         //     {
