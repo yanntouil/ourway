@@ -1,13 +1,14 @@
 /**
  * Post : L'agilité c'est quoi ?
  */
-  
+const id = '44176d19-87d8-42d1-9106-6b663ddfb31e'
 const post = [{
-    id: "44176d19-87d8-42d1-9106-6b663ddfb31e",
+    id: '44176d19-87d8-42d1-9106-6b663ddfb31e',
     name: '',
     hero: true,
     images: {
         cover: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/cover.jpg',
+        blur: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/blur.jpg',
         mobile: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/mobile.jpg',
         banner: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/banner.jpg',
         opengraph: '/images/blog/posts/project-management/44176d19-87d8-42d1-9106-6b663ddfb31e/opengraph.jpg',

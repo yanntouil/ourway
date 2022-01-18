@@ -57,7 +57,15 @@ export default function BlogCategory({ params }) {
             <Main noPaddingX  noPaddingTop>
 
                 <BlogHeading>
-                    <Image src={category.images.background} alt={__('title')} layout="fill" objectFit="cover" priority={true} />
+                    <Image 
+                        src={category.images.background} 
+                        alt={__('title')} 
+                        layout="fill" 
+                        objectFit="cover" 
+                        priority={true} 
+                        placeholder="blur"
+                        blurDataURL={category.images.background} 
+                    />
                     <BlogHeadingBody>
                         <BlogHeadingTitle className={`text-stroke-${category.color}-500`}>{category.title}</BlogHeadingTitle>
                         <BlogHeadingSecondary>{category.secondary}</BlogHeadingSecondary>
@@ -70,7 +78,7 @@ export default function BlogCategory({ params }) {
                         <CardRotate key={`blog-${category.name}-${post.id}`}>
                             <Link href={`/blog/${category.name}/${post.slug}`}>
                                 <a className="grow flex flex-col gap-4">
-                                    <CardImage src={post.images.cover} />
+                                    <CardImage image={post.images} />
                                     <CardHeader>
                                         <CardHeaderIcon className={`bg-${category.color}-500`}>
                                             {/* Types icons */}

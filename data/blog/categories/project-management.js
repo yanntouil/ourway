@@ -9,6 +9,7 @@ const category = [{
     color: 'indigo',
     images: {
         cover: '/images/blog/categories/project-management/cover.jpg',
+        blur: '/images/blog/categories/project-management/blur.jpg',
         background: '/images/blog/categories/project-management/background.jpg',
         icon: '/images/blog/categories/project-management/icon.png',
     },

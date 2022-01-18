@@ -19,12 +19,12 @@ export default function Card(props) {
     }
     return (
         <motion.div {...props} {...motionCard} className={className([
+            props.className ?? '',
             'group flex flex-col rounded select-none',
             'bg-white dark:bg-secondary-800',
             'shadow-lg hover:shadow-xl shadow-secondary-600 hover:shadow-secondary-600 dark:shadow-black hover:dark:shadow-black',
             'transition-all duration-500',
             'hover:transform hover:scale-105',
-            props.className ?? '',
         ])} />
     )
 }
@@ -50,8 +50,8 @@ export function CardRotate(props) {
 export function CardHeader(props) {
     return (
         <div {...props} className={className([
-            'flex px-4 gap-4',
             props.className ?? '',
+            'flex px-4 gap-4',
         ])} />
     )
 }
@@ -87,11 +87,24 @@ export function CardHeaderTitle({ title = '', secondary = '' }) {
  * Display a heading image in card
  * @param {{src: Object }} props
  */
-export function CardImage({ src, img, alt = '' }) {
+export function CardImage({ src = '', image, alt = '' }) {
+    const imageProps = {}
+    if (image && image.cover) imageProps.src = image.cover
+    else imageProps.src = src
+    if (image && image.blur) {
+        imageProps.blurDataURL = image.blur
+        imageProps.placeholder = 'blur'
+    }
     return (
         <div className="relative aspect-[16/9] rounded-t overflow-hidden">
-            {src && (<Image src={src} alt={alt} layout="fill" objectFit="cover" priority={true} className="transition-transform duration-500 group-hover:transform group-hover:scale-125" />)}
-            {img && (<img src={img} alt={alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:transform group-hover:scale-125" />)}
+            <Image 
+                className="transition-transform duration-500 group-hover:transform group-hover:scale-125" 
+                alt={alt} 
+                layout="fill" 
+                objectFit="cover" 
+                priority={true}
+                {...imageProps}
+            />
         </div>
     )
 }

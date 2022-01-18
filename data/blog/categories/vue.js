@@ -9,6 +9,7 @@ const category = [{
     color: 'emerald',
     images: {
         cover: '/images/blog/categories/vue/cover.jpg',
+        blur: '/images/blog/categories/vue/blur.jpg',
         background: '/images/blog/categories/vue/background.jpg',
         icon: '/images/blog/categories/vue/icon.png',
     },

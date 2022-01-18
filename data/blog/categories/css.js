@@ -9,6 +9,7 @@ const category = [{
     color: 'rose',
     images: {
         cover: '/images/blog/categories/css/cover.jpg',
+        blur: '/images/blog/categories/css/blur.jpg',
         background: '/images/blog/categories/css/background.jpg',
         icon: '/images/blog/categories/css/icon.png',
     },

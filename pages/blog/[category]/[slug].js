@@ -60,9 +60,25 @@ export default function BlogArticle ({ params }) {
                     {/* Image */}
                     <div className="relative aspect-[16/4] mt-16 sm:mt-24 xl:mt-0">
                         {post.images.banner ? (
-                            <Image src={post.images.banner} alt={post.title} layout="fill" objectFit="cover" priority={true} />
+                            <Image 
+                                src={post.images.banner} 
+                                alt={post.title} 
+                                layout="fill" 
+                                objectFit="cover" 
+                                priority={true} 
+                                placeholder="blur"
+                                blurDataURL={post.images.banner} 
+                            />
                         ) : (
-                            <Image src={post.images.cover} alt={post.title} layout="fill" objectFit="cover" priority={true} />
+                            <Image 
+                                src={post.images.cover} 
+                                alt={post.title} 
+                                layout="fill" 
+                                objectFit="cover" 
+                                priority={true} 
+                                placeholder="blur"
+                                blurDataURL={post.images.cover} 
+                            />
                         )}
                     </div>
                     {/* Heading */}

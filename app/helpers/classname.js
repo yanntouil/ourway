@@ -1,5 +1,17 @@
 
 
+
+
+
+/**
+ * className : Use class like Vue JS
+ * String : 'class1 class2 ...'
+ * Array of string : ['class1 class2', 'class3', ...]
+ * Conditional object : { 'class1': true, ... }
+ * Array mix : ['class1 class2', 'class3', { 'class3': true, ... }, ...]
+ * @param {Array|Object|String} classes
+ * @return {String} 
+ */
 export default function className(classes) {
     if (Array.isArray(classes)) {
         const list = []

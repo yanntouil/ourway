@@ -9,6 +9,7 @@ const category = [{
     color: 'red',
     images: {
         cover: '/images/blog/categories/laravel/cover.jpg',
+        blur: '/images/blog/categories/laravel/blur.jpg',
         background: '/images/blog/categories/laravel/background.jpg',
         icon: '/images/blog/categories/laravel/icon.png',
     },

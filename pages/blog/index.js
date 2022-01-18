@@ -78,7 +78,7 @@ export default function Index() {
                             <Card3DFront>
                                 <Link href={`/blog/${category.name}`}>
                                     <a className="grow flex flex-col gap-4">
-                                        <CardImage src={category.images.cover} />
+                                        <CardImage image={category.images} />
                                         <CardHeader>
                                             <CardHeaderIcon className={`text-white bg-${category.color}-500`}>
                                                 <Image src={category.images.icon} width={40} height={40} alt={category.title} />
@@ -117,10 +117,14 @@ export default function Index() {
  */
 export function BlogLastPosts({ posts, className }) {
     /**
-     * Hooks
+     * Translation
      */
     const __ = useTranslation('pageBlog')
     const { currentLocale } = useSelector(translationSelector)
+
+    /**
+     * Render
+     */
     return (
         <div className={`grow flex flex-col justify-center gap-2 font-gochi-hand ${className}`}>
             <h4 className="text-3xl font-medium leading-normal text-center">{__('last-articles')}</h4>

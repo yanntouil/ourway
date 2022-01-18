@@ -8,6 +8,7 @@ const post = [{
     hero: true,
     images: {
         cover: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/cover.jpg',
+        blur: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/blur.jpg',
         mobile: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/mobile.jpg',
         banner: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/banner.jpg',
         opengraph: '/images/blog/posts/react/3024493-e654-455c-bfb7-1f517272c0b9/opengraph.jpg',
