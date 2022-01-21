@@ -128,7 +128,7 @@ export default function Footer() {
             <div className="flex">
                 <div className="flex flex-col gap-2">
                     <h2 className="sm:relative sm:-left-4"><Logo className="h-16 fill-current" ariaLabel="Ourway" /><span className="sr-only">{config.sitename}</span></h2>
-                    <h3 className="flex items-center gap-4 text-2xl sm:-mr-2 md:mr-0 font-semibold">{config.author.firstname} {config.author.lastname} <span className="sr-only">-</span> <span className="text-base font-normal italic">{__('footer.job')}</span></h3>
+                    <h3 className="flex justify-between sm:justify-start items-center gap-4 text-2xl sm:-mr-2 md:mr-0 font-semibold">{config.author.firstname} {config.author.lastname} <span className="sr-only">-</span> <span className="text-base font-normal italic">{__('footer.job')}</span></h3>
                     <ul>
                         <li className="flex items-center">
                             <AdresseIcon className="w-6 h-6 my-2 mx-4 shrink-0 fill-current" aria-hidden="true" />

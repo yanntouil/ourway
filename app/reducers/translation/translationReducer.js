@@ -12,7 +12,7 @@ const initialState = {
 }
 
 /**
- * Layout reducer
+ * Translation reducer
  * @param {Object} state
  * @param {Object} action
  * @returns {Object}

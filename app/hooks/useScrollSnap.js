@@ -11,7 +11,6 @@ export default function useScrollSnap() {
      const sectionRef = useRef([])
      const [sectionIndex, setSectionIndex] = useState(0)
      const onScroll = (e) => {
-        console.log(sectionRef.current);
         const snapConfidenceThreshold = window.innerHeight / 4
         sectionRef.current.forEach((el, index) => {
             if (el.offsetTop - snapConfidenceThreshold < window.scrollY && el.offsetTop + snapConfidenceThreshold > window.scrollY) {

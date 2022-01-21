@@ -106,7 +106,7 @@ export default function Home() {
                         <div className="flex flex-col my-8 gap-8">
                             <BoxBullet>
                                 <BoxBulletIcon>
-                                    <RecycleSvg className="w-16 h-16 fill-current" />
+                                    <RecycleSvg className="w-12 h-12 sm:w-16 sm:h-16 fill-current" />
                                 </BoxBulletIcon>
                                 <BoxBulletBody>
                                     <BoxBulletTitle>{__('why-me.versatile.title')}</BoxBulletTitle>
@@ -115,7 +115,7 @@ export default function Home() {
                             </BoxBullet>
                             <BoxBullet>
                                 <BoxBulletIcon>
-                                    <BallotCheckSvg className="w-16 h-16 fill-current" />
+                                    <BallotCheckSvg className="w-12 h-12 sm:w-16 sm:h-16 fill-current" />
                                 </BoxBulletIcon>
                                 <BoxBulletBody>
                                     <BoxBulletTitle>{__('why-me.organized.title')}</BoxBulletTitle>
@@ -124,7 +124,7 @@ export default function Home() {
                             </BoxBullet>
                             <BoxBullet>
                                 <BoxBulletIcon>
-                                    <RssSvg className="w-16 h-16 fill-current" />
+                                    <RssSvg className="w-12 h-12 sm:w-16 sm:h-16 fill-current" />
                                 </BoxBulletIcon>
                                 <BoxBulletBody>
                                     <BoxBulletTitle>{__('why-me.curious.title')}</BoxBulletTitle>
@@ -133,7 +133,7 @@ export default function Home() {
                             </BoxBullet>
                             <BoxBullet>
                                 <BoxBulletIcon>
-                                    <ChartLineSvg className="w-16 h-16 fill-current" />
+                                    <ChartLineSvg className="w-12 h-12 sm:w-16 sm:h-16 fill-current" />
                                 </BoxBulletIcon>
                                 <BoxBulletBody>
                                     <BoxBulletTitle>{__('why-me.productive.title')}</BoxBulletTitle>
@@ -149,11 +149,11 @@ export default function Home() {
                                 <h2 className="text-3xl font-semibold">{__('why-me.footer.title')}</h2>
                                 <p>{__('why-me.footer.content')}</p>
                             </div>
-                            <div className="relative sm:col-span-6 lg:col-span-4 flex flex-col items-start gap-4">
+                            <div className="relative sm:col-span-6 lg:col-span-4 flex flex-col items-center sm:items-start gap-4">
                                 <Link href="/contact" >
                                     <a className="block bg-primary-600 hover:bg-primary-700 rounded text-white px-8 py-2">{__('why-me.footer.contact-me')}</a>
                                 </Link>
-                                <p>
+                                <p className="text-center sm:text-left">
                                     {__('why-me.footer.call-me')}<br />
                                     {displayPhone ? (
                                         <a href={`tel:${config.author.phone}`} className="font-number">{config.author.phone}</a>

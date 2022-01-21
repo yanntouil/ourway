@@ -24,7 +24,7 @@ Je m'excuse un peu de la longueur de cet article, l'idée de départ était de p
 d'histoire sans expliquer l'avancement des besoins, les réponses fournies au fil du temps et la réalité du marché. J'ai ajouté 
 un petit lexique en fin de page pour faciliter la lecture des non-développeurs, alors si vous avez du mal n'hésitez pas à commencer par là.
 
-## Pour commencer une peu d'histoire
+## Pour commencer un peu d'histoire
 
 Vue JS est un Framework* **JavaScript** évolutif open-source permettant développer des interfaces utilisateur principalement 
 pour construire des **PWA*** (Progressive Web App) et des **SPA*** (Single Page Application). Vue a été créé par **Evan You** 
